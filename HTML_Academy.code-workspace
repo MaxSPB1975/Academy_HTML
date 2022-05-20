@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "HTML_Academy",
+			"path": "."
+		}
+	],
+	"settings": {
+		"projectManager.git.baseFolders": [
+			"Sedona"
+		]
+	}
+}

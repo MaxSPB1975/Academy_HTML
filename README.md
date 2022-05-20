@@ -1,1 +1,3 @@
-# Academy_HTML
+# HTML_Academy
+
+Изучение frontend в HTML Academy

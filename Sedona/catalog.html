@@ -10,31 +10,111 @@
 	<!-- ----------------------------------------------------------------------- -->
 	<!--                       header с панелью навигации                        -->
 	<!-- ----------------------------------------------------------------------- -->
-	<header>
+	<header class="">
 		<!-- -------------------------- панель навигации --------------------------- -->
-		<nav>
-
+		<nav class="">
+			<ul>
+				<li><a href="index.html" class="">Информация</a></li>
+				<li><a href="index.html" class="">Фото и видео</a></li>
+				<li><a href="index.html" class="">Карта штата</a></li>
+				<li><a href="catalog.html" class="">Гостиницы</a></li>
+			</ul>
 		</nav>
+		<!-- --------------------------- Логотип Sedona ---------------------------- -->
+		<a><img src=" ./img/logo.svg" width="" height="" alt="Логотип Седона"></a>
 	</header>
 	<!-- ----------------------------------------------------------------------- -->
-	<!--                             основой раздел                              -->
+	<!--                             основной раздел                             -->
 	<!-- ----------------------------------------------------------------------- -->
 	<main>
+		<h1>Каталог гостиниц</h1>
 		<!-- -------------------------- 1 секция Фильтры --------------------------- -->
 		<section class="">
-
+			<h2 class="">Фильтр</h2>
+			<form method="get" action="http://echo.htmlacademy.ru">
+				<fieldset>
+					<legend>Инфраструктура:</legend>
+					<ul class="">
+						<li class="">
+							<input type="checkbox" name="pool" id="filter-pool" checked>
+							<label for="filter-pool">Бассейн</label>
+						</li>
+						<li class="">
+							<input type="checkbox" name="parking" id="filter-parking">
+							<label for="filter-parking">Парковка</label>
+						</li>
+						<li class="">
+							<input type="checkbox" name="wi-fi" id="filter-wi-fi">
+							<label for="filter-wi-fi">Wi-Fi</label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Тип жилья:</legend>
+					<ul class="">
+						<li class=""><input type="checkbox" name="hotel" id="filter-hotel" checked>
+							<label for="filter-hotel">Гостиница</label>
+						</li>
+						<li class=""><input type="checkbox" name="motel" id="filter-motel" checked>
+							<label for="filter-motel">Мотель</label>
+						</li>
+						<li class=""><input type="checkbox" name="apart" id="filter-apart" checked>
+							<label for="filter-apart">Апартаменты</label>
+						</li>
+					</ul>
+				</fieldset>
+				<button type="submit">Показать</button>
+			</form>
 		</section>
 		<!-- ------------------- 2 секция Таблица с гостиницами -------------------- -->
 		<section class="">
+			<table>
+				<tr>
+					<td>картинка</td>
+					<td>название с кнопками</td>
+					<td>РЕйтинг</td>
+
+				</tr>
+			</table>
+		</section>
+
+	</main>
+
+	<!-- ----------------------------------------------------------------------- -->
+	<!--                                 подвал                                  -->
+	<!-- ----------------------------------------------------------------------- -->
+
+	<footer>
+		<h2>Контакты</h2>
+		<!----------------------- конакты инстаграмм и телефон ---------------------->
+		<section class="">
+			<h3 class="">Как с нами связаться</h3>
+			<ul>
+				<li><a href="#">#visitSEDONA</a></li>
+				<li><a href="tel:+78005558628">+7 800 555-86-28</a></li>
+			</ul>
+		</section>
+		<!--------------------------- ссылки на соц.сети --------------------------->
+		<section class="">
+			<h3 class="">Социальные сети</h3>
+			<ul>
+				<li><a href="" class=""><img src="#" alt="Мы в Twitter"></a></li>
+				<li><a href="" class=""><img src="#" alt="Страничка в Facebook"></a></li>
+				<li><a href="" class=""><img src="#" alt="Наш YouTube канал"></a></li>
+			</ul>
+		</section>
+		<!-------------------------------- авторство  -------------------------------->
+		<section class="">
+			<h3 class="">Разработка и дизайн</h3>
+			<ul>
+				<li>website <a href="https://htmlacademy.ru/study" class=""><img src="./img/logo_htmlacademy.png"
+							alt="Лого HTML Academy"></a></li>
+			</ul>
 
 		</section>
-	</main>
-	<!-- ----------------------------------------------------------------------- -->
-	<!--                              подвал сайта                               -->
-	<!-- ----------------------------------------------------------------------- -->
-	<footer>
-
 	</footer>
+
+
 </body>
 
 </html>

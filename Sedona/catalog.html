@@ -31,7 +31,8 @@
 		<!-- -------------------------- 1 секция Фильтры --------------------------- -->
 		<section class="">
 			<h2 class="">Фильтр</h2>
-			<form method="get" action="http://echo.htmlacademy.ru">
+			<form method="GET" action="http://echo.htmlacademy.ru">
+				<!-- --------------------------- инфрастукрутра ---------------------------- -->
 				<fieldset>
 					<legend>Инфраструктура:</legend>
 					<ul class="">
@@ -49,19 +50,40 @@
 						</li>
 					</ul>
 				</fieldset>
+				<!-- ------------------------------ тип жилья ------------------------------ -->
 				<fieldset>
 					<legend>Тип жилья:</legend>
 					<ul class="">
-						<li class=""><input type="checkbox" name="hotel" id="filter-hotel" checked>
+						<li class="">
+							<input type="checkbox" name="hotel" id="filter-hotel" checked>
 							<label for="filter-hotel">Гостиница</label>
 						</li>
-						<li class=""><input type="checkbox" name="motel" id="filter-motel" checked>
+						<li class="">
+							<input type="checkbox" name="motel" id="filter-motel" checked>
 							<label for="filter-motel">Мотель</label>
 						</li>
-						<li class=""><input type="checkbox" name="apart" id="filter-apart" checked>
+						<li class="">
+							<input type="checkbox" name="apart" id="filter-apart" checked>
 							<label for="filter-apart">Апартаменты</label>
 						</li>
 					</ul>
+				</fieldset>
+				<!-- ---------------------------- диапазон цен ----------------------------- -->
+				<fieldset>
+					<legend>Стоимость в сутки, &#8381;:</legend>
+					<ul class="">
+						<li class="">
+							<label for="filter-min-price">От</label>
+							<input type="number" name="min-price" id="filter-min-price" min="0" value="0" step="1">
+						</li>
+						<li class="">
+							<label for="filter-max-price">До</label>
+							<input type="number" name="max-price" id="filter-max-price" min="0" value="3000" step="1">
+						</li>
+					</ul>
+					<!-- ---------------------- ползунки выбора стоимости ----------------------- -->
+					<input type="range" min="0" value="0" step="1" class="">
+					<input type="range" min="0" max="100000" value="3000" step="1" class="">
 				</fieldset>
 				<button type="submit">Показать</button>
 			</form>

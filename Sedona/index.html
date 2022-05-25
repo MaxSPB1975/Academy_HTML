@@ -29,11 +29,15 @@
   <main class="">
     <!-- --------------------- 1 секция Welcome ------------------------------ -->
     <section class="">
-      <h1>Седона - небольшой городок в штате Аризона</h1>
+      <h1 style="visibility: hidden;">Седона - небольшой городок в штате Аризона</h1>
+      <img src="#" width="1200px" height="509px" alt="Фоновый рисунок">
+      <img src="#" width="256px" height="29px" alt="Большой логотип">
+      <h3 class="">Седона — небольшой городок в Аризоне,заслуживающий большего!</h3>
+      <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </section>
     <!-- -------------------- 2 секция Настоящий городок -------------------- -->
     <section class="">
-      <h2>Настоящий городок</h2>
+      <h2 style="visibility: hidden;">Настоящий городок</h2>
 
       <ul class="">
         <li class="">
@@ -42,25 +46,24 @@
           <p class="">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
         </li>
       </ul>
-      <img src="№" alt="Картинка Open Range">
+      <img src="#" width="800px" height="256px" alt="Картинка Open Range">
     </section>
     <!-- --------------------- 3 секция Преимущества ------------------------- -->
     <section class="">
-      <h2>Преимущества</h2>
-
+      <h2 style="visibility: hidden;">Преимущества</h2>
       <ul>
         <li>
-          <img class="" src="#" alt="">
+          <img class="" src="#" width="75px" height="72px" alt="Домик">
           <h3 class="">жильё</h3>
           <p class="">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
         </li>
         <li>
-          <img class="" src="#" alt="">
+          <img class="" src="#" width="75px" height="70px" alt="Бургер">
           <h3 class="">еда</h3>
           <p class="">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </li>
         <li>
-          <img class="" src="#" alt="">
+          <img class="" src="#" width="64px" height="77px" alt="Сувенир">
           <h3 class="">сувениры</h3>
           <p class="">Не только китайского, но и местного производства!</p>
         </li>
@@ -68,11 +71,11 @@
     </section>
     <!-- ------------------------ 4 секция Мост Дьявола ---------------------- -->
     <section class="">
-      <h2>Мост дьявола</h2>
-      <img src="#" alt="Картинка каньона">
+      <h2 style="visibility: hidden;">Мост дьявола</h2>
+      <img src="#" width="800px" height="256px" alt="Картинка каньона">
       <ul class="">
         <li class="">
-          <h1 class="">Там есть Мост дьявола</h1>
+          <h3 class="">Там есть Мост дьявола</h3>
           <p class="">№2</p>
           <p class="">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </li>
@@ -80,7 +83,7 @@
     </section>
     <!-- ----------------------- 5 секция Кратк. описание -------------------- -->
     <section class="">
-      <h2>Краткое описание</h2>
+      <h2 style="visibility: hidden;">Краткое описание</h2>
       <ul class="">
         <li class="">
           <h3 class="">небольшая площадь</h3>
@@ -101,7 +104,7 @@
     </section>
     <!-- --------------------- 6 секция Поиск гостиниц ----------------------- -->
     <section class="">
-      <h2>Поиск гостиницы</h2>
+      <h2 style="visibility: hidden;">Поиск гостиницы</h2>
       <ul class="">
         <li class="">
           <h2 class="">Заинтересовались?</h2>
@@ -114,7 +117,7 @@
     <!--                         форма поиска гостиницы                          -->
     <!-- ----------------------------------------------------------------------- -->
     <section class="">
-      <h2 class="">Поиск гостиницы</h2>
+      <h2 class="" style="visibility: hidden;">Форма поиска гостиницы</h2>
       <form action="" method="">
         <label for="search-date-entry">Дата заезда:</label>
         <input type="date" id="search-date-entry" name="date-entry">
@@ -122,20 +125,20 @@
         <input type="date" id="search-date-leave" name="date-leave">
         <!-- --------------------------- кол-во взрослых --------------------------- -->
         <label for="search-adult">Взрослые:</label>
-        <button class="plus">-</button>
-        <input type="text" id="search-adult" name="adult" placeholder="2">
+        <button class="minus">-</button>
+        <input type="number" id="search-adult" name="adult" min="0" value="2" step="1">
         <button class="plus">+</button>
         <!-- ---------------------------- кол-во детей ----------------------------- -->
         <label for="search-child">Дети:</label>
-        <button class="plus">-</button>
-        <input type="text" id="search-child" name="child" placeholder="0">
+        <button class="minus">-</button>
+        <input type="number" id="search-child" name="child" min="0" value="0" step="1">
         <button class="plus">+</button>
       </form>
 
     </section>
     <!-- -------------------------- 7 секция Карта --------------------------- -->
     <section class="">
-      <h2>Карта Седона</h2>
+      <h2 style="visibility: hidden;">Карта Седона</h2>
       <p>Карта</p>
     </section>
   </main>
@@ -143,10 +146,10 @@
   <!--                              подвал сайта                               -->
   <!-- ----------------------------------------------------------------------- -->
   <footer>
-    <h2>Контакты</h2>
+    <h2 style="visibility: hidden;">Контакты</h2>
     <!----------------------- конакты инстаграмм и телефон ---------------------->
     <section class="">
-      <h3 class="">Как с нами связаться</h3>
+      <h3 class="" style="visibility: hidden;">Как с нами связаться</h3>
       <ul>
         <li><a href="#">#visitSEDONA</a></li>
         <li><a href="tel:+78005558628">+7 800 555-86-28</a></li>
@@ -154,7 +157,7 @@
     </section>
     <!--------------------------- ссылки на соц.сети --------------------------->
     <section class="">
-      <h3 class="">Социальные сети</h3>
+      <h3 class="" style="visibility: hidden;">Социальные сети</h3>
       <ul>
         <li><a href="" class=""><img src="#" alt="Мы в Twitter"></a></li>
         <li><a href="" class=""><img src="#" alt="Страничка в Facebook"></a></li>
@@ -163,7 +166,7 @@
     </section>
     <!-------------------------------- авторство  -------------------------------->
     <section class="">
-      <h3 class="">Разработка и дизайн</h3>
+      <h3 class="" style="visibility: hidden;">Разработка и дизайн</h3>
       <ul>
         <li>website <a href="https://htmlacademy.ru/study" class=""><img src="./img/logo_htmlacademy.png"
               alt="Лого HTML Academy"></a></li>

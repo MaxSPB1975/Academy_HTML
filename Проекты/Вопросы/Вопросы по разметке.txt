@@ -18,6 +18,5 @@
 
 3. На какждой из страниц сделал скрытые заголовки с помощью style=visibility: hidden; но на страницах остается пустое пространство, в котором скрыты эти заголовки. Правильно ли я сделал? Если применить display: none; то тогда пустого пространства не остается. Что лучше применять?
 
-Главная страница - https://maxspb1975.github.io/Academy_HTML/Sedona/index.html
-
-Каталог https://maxspb1975.github.io/Academy_HTML/Sedona/catalog.html
+* Главная страница - https://maxspb1975.github.io/Academy_HTML/Sedona/index.html
+* Каталог https://maxspb1975.github.io/Academy_HTML/Sedona/catalog.html

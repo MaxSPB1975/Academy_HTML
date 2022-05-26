@@ -38,3 +38,7 @@ Merge - перенос кода из одной ветки в другую.
 - https://ru.bem.info/methodology/quick-start/
 - http://yoksel.github.io/easy-markup/bem-rules/
 - https://nicothin.pro/idiomatic-pre-CSS/
+
+## Chrome DevTools
+
+https://htmlacademy.ru/blog/articles/chrome-devtools-1

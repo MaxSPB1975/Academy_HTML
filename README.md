@@ -2,6 +2,10 @@
 
 Изучение frontend в HTML Academy
 
+## Ссылки на страницы
+ * [Sedona - Главна страница](/Sedona/index.html)
+ * [Sedona - Каталог](/Sedona/catalog.html) - проект Бургеры
+
 Состав проекта:
 
 - main - окончательный готовый вариант проекта Sedona;

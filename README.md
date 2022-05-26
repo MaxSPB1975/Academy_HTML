@@ -2,9 +2,9 @@
 
 Изучение frontend в HTML Academy
 
-## Ссылки на страницы
+## Ссылки на страницы проекта Sedona
  * [Sedona - Главна страница](/Sedona/index.html)
- * [Sedona - Каталог](/Sedona/catalog.html) - проект Бургеры
+ * [Sedona - Каталог](/Sedona/catalog.html)
 
 Состав проекта:
 

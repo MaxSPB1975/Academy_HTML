@@ -3,14 +3,17 @@
 Изучение frontend в HTML Academy
 
 ## Ссылки на страницы проекта Sedona
- * [Sedona - Главна страница](/Sedona/index.html)
- * [Sedona - Каталог](/Sedona/catalog.html)
+
+- [Sedona - Главна страница](/Sedona/index.html)
+- [Sedona - Каталог](/Sedona/catalog.html)
+- [Sedona - Пустая страница](/Sedona/blank.html)
 
 Состав проекта:
 
 - main - окончательный готовый вариант проекта Sedona;
-- index - ветка для работы с index.HTML;
+- index - ветка для работы с index.html;
 - catalog - ветка для работы с catalog.html;
+- blank - ветка для работы сblank.html.
 
 ## Слияние веток
 

@@ -8,6 +8,10 @@
 - [Sedona - Каталог](/Sedona/catalog.html)
 - [Sedona - Пустая страница](/Sedona/blank.html)
 
+Опубликованные страницы:
+
+- https://maxspb1975.github.io/Academy_HTML/
+
 Состав проекта:
 
 - main - окончательный готовый вариант проекта Sedona;

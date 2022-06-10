@@ -18,7 +18,7 @@
     {
       "src": "./img/favicons/main/512x512.png",
       "sizes": "512x512",
-      "type": "image/png",
+      "type": "image/png"
    },
    {
    "src": "./img/favicons/catalog/32x32.png",

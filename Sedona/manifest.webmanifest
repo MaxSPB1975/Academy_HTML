@@ -1,55 +1,64 @@
 {
   "icons": [
   {
-   "src": "img/main/favicons/32x32.png"",
-   "sizes": "32x32",
+   "src": "./img/favicons/main/32x32.png",
    "type": "image/png",
-  
+   "sizes": "32x32"
+   },
+  {
+   "src": "./img/favicons/main/152x152.png",
+   "type": "image/png",
+   "sizes": "152x152"
   },
   {
-   "src": "img/main/favicons/152x152.png",
-   "sizes": "152x152",
+   "src": "./img/favicons/main/183x183.png",
    "type": "image/png",
-   
-  },
-  {
-   "src": "img/main/favicons/183x183.png",
-   "sizes": "183x183",
-   "type": "image/png",
+   "sizes": "183x183"
     },
+    {
+      "src": "./img/favicons/main/512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+   },
    {
-   "src": "img/catalog/favicons/32x32.png"",
-   "sizes": "32x32",
+   "src": "./img/favicons/catalog/32x32.png",
    "type": "image/png",
-  
-  },
+   "sizes": "32x32"
+   },
   {
-   "src": "img/catalog/favicons/152x152.png",
-   "sizes": "152x152",
+   "src": "./img/favicons/catalog/152x152.png",
    "type": "image/png",
-   
-  },
+   "sizes": "152x152"
+      },
   {
-   "src": "img/catalog/favicons/183x183.png",
-   "sizes": "183x183",
+   "src": "./img/favicons/catalog/183x183.png",
    "type": "image/png",
+   "sizes": "183x183"
+       },
+    {
+      "src": "./img/favicons/catalog/512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+          },
+  {
+   "src": "./img/favicons/blank/32x32.png",
+   "type": "image/png",
+   "sizes": "32x32"
+   },
+  {
+   "src": "./img/favicons/blank/152x152.png",
+   "type": "image/png",
+   "sizes": "152x152"
+   },
+  {
+   "src": "./img/favicons/blank/183x183.png",
+   "type": "image/png",
+   "sizes": "183x183"
     },
-  {
-   "src": "img/blank/favicons/32x32.png"",
-   "sizes": "32x32",
-   "type": "image/png",
-  
-  },
-  {
-   "src": "img/blank/favicons/152x152.png",
-   "sizes": "152x152",
-   "type": "image/png",
-   
-  },
-  {
-   "src": "img/blank/favicons/183x183.png",
-   "sizes": "183x183",
-   "type": "image/png",
+    {
+      "src": "./img/favicons/blank/512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
  ]
 }

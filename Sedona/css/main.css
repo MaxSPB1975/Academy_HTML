@@ -1,6 +1,49 @@
-.sec__1 {
+/*@font-face {
+font-family: 'PT Sans', "Arial", sans-serif;
+font-style: normal;
+font-weight: 700;
+}*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+body {
+	font-family: "PT Sans", "Arial", sans-serif;
+font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+ }
+.main-navigation {
+	width: 1200px;
+height: 56px;
+text-align: center;
+}
+
+.main-navigation {
+	background-color: #fff;
+	
+	text-transform: uppercase;
+	font-weight: 700;
+
+}
+.site-navigation {
+	list-style: none;
+}
+.nav-item {
+	text-decoration: none;
+}
+.main-header-logo {
+}
+
+
+
+.container {
+	width: 1200px;
+	text-align: center;
+}
+
+
+.welcome {
 	width: 1200px;
 	height: 510px;
 	background-image: url("../img/main/sec1_bg_photo.png");
-	text-align: center;
+	
 }

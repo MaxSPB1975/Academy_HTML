@@ -5,45 +5,157 @@ font-weight: 700;
 }*/
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 
-body {
+.page-body {
 	font-family: "PT Sans", "Arial", sans-serif;
-font-style: normal;
+	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
+	color: black;
+	background-color: aqua;
  }
-.main-navigation {
-	width: 1200px;
-height: 56px;
-text-align: center;
+
+ .container {
+	max-width: 1200px;
+	margin: auto;
 }
 
-.main-navigation {
-	background-color: #fff;
-	
-	text-transform: uppercase;
-	font-weight: 700;
-
+h3, p, ul, li, a, img, button  {
+	padding: 0;
+	margin: 0;
 }
-.site-navigation {
+
+ul {
 	list-style: none;
-}
-.nav-item {
-	text-decoration: none;
-}
-.main-header-logo {
-}
-
-
-
-.container {
-	width: 1200px;
+	}
+header, section, footer {
+	/* --------------------------- position: absolute; -------------------------- */
 	text-align: center;
 }
+a {
+	text-decoration: none;
+}
 
+	.nav-item, .town-item, .feature-item,
+	.bridge-item, .search-item,
+	.about-header, .button,
+	.contact-item, .develop-item  {
+	text-transform: uppercase;
+}
 
-.welcome {
+/* ------------------------------- navigation ------------------------------- */
+.main-navigation {
 	width: 1200px;
-	height: 510px;
-	background-image: url("../img/main/sec1_bg_photo.png");
+	height: 56px;
+	background-color: #fff;
+	font-weight: 700;
+}
+
+
+.site-navigation {
+	height: 56px;
+}
+
+.nav-item {
+display: inline;
+vertical-align: middle;
+padding: 15px 67px 15px 36px;
+}
+.nav-button{
+color: black;
+}
+
+.main-header-logo {
+	z-index: 10;
+}
+/* ----------------------------- section Welcome ---------------------------- */
+.welcome {
+	display: block;
+	width: 1200px;
+	height: 509px;
+	background: 	 url("../img/main/sec1_bg_photo.png") no-repeat center;
+}
+.welcome-pic {
+	margin-top: 78px;
+	}
+.welcome-gorgeous {
+	margin-top: 10px;
+	}
+	.welcome-sedona {
+		margin-top: 53px;
+	}
+
+.figure-pic {
+margin-top: 15px;
+}
+/* ------------------------------ section About ----------------------------- */
+.about {
 	
+	}
+.about-header {
+	width: 470px;
+	line-height: 26px;
+	margin: auto;
+	margin-top: 56px;
+}
+.about-features {
+	line-height: 26px;
+	margin-top: 30px;
+	margin-bottom: 51px;
+}
+/* ------------------------------ section Town ------------------------------ */
+.town-list, .bridge-list {
+	width: 400px;
+	height: 256px;
+	background-color: #81B3D2;
+	color: #fff;
+	text-align: center;
+	vertical-align: center;
+}
+.town-item, .bridge-item {
+	text-align: center;
+	vertical-align: center;
+}
+/* ------------------------------- search-form ------------------------------ */
+.button {
+	background-color: #766357;
+	color: #fff;
+	font-weight: 700;
+border: none;
+padding: 30px 124px;
+}
+.search-form {
+	text-align: center;
+	width: 568px;
+	height: 395px;
+	background-color:#fff;
+
+}
+.search-form > button {
+	background-color: #81B3D2;
+	padding: 16px 182px;
+}
+/* --------------------------------- footer --------------------------------- */
+.footer {
+	
+}
+/* -------------------------------- contacts -------------------------------- */
+.contacts {
+	
+}
+.contact-insta, .contact-phone {
+	color:black;
+	font-weight: 700;
+}
+/* ------------------------------ social-icons ------------------------------ */
+.social-item {
+	display: inline;
+	background-color: #81B3D2; /*in peace*/
+	padding: 10px;
+	margin: 00px 10px ;
+}
+.social-buttom {
+	text-align: center;
+	vertical-align: middle;
+	width:46px;
+	height: 48px;
 }

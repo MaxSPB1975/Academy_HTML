@@ -5,13 +5,44 @@ font-weight: 700;
 }*/
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 
+/* -------------------------- Variables -------------------------- */
+:root {
+--bg-color: aqua;
+--section-bg-color: #fff;
+--special-section-bg-color: #81B3D2;
+--txt-color: #000;
+--special-section-txt-color: #fff;
+/* ------------------------------ кнопка Найти ------------------------------ */
+--btn-color-search-act: #81B3D2;
+--btn-color-search-move: #669EC0;
+--btn-color-search-hover: #5496BD;
+--btn-txt-color-act: #fff;
+--btn-txt-color-move: #fff;
+--special-btn-txt-color-click: rgba(255, 255, 255, 0.3);
+/* --------------------- кнопка Поиск гостиницыв Седоне --------------------- */
+--special-btn-color-search-act: #766357;
+--special-btn-color-search-move: #604E43;
+--special-btn-color-search-hover: #503E33;
+--special-btn-txt-color-search-act: #fff;
+--special-btn-txt-color-search-move: #fff;
+--special-btn-txt-color-search-click: rgba(255, 255, 255, 0.3);
+/* ----------------------------- кнопки соцсетей ---------------------------- */
+--soc-btn-color-active: #81B3D2;
+--soc-btn-color-move: #669EC0;
+--soc-btn-color-hover: #5496BD;
+--soc-btn-icon-color-act: #fff;
+--soc-btn-icon-color-move: #fff;
+--special-soc-btn-icon-color-click: rgba(255, 255, 255, 0.3);
+
+}
+
 .page-body {
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
-	color: black;
-	background-color: aqua;
+	color: var(--txt-color);
+	background-color: var(--bg-color);
  }
 
  .container {
@@ -46,13 +77,13 @@ a {
 .main-navigation {
 	width: 1200px;
 	height: 56px;
-	background-color: #fff;
+	background-color: var(--section-bg-color);
 	font-weight: 700;
 }
 
 
 .site-navigation {
-	height: 56px;
+
 }
 
 .nav-item {
@@ -61,7 +92,7 @@ vertical-align: middle;
 padding: 15px 67px 15px 36px;
 }
 .nav-button{
-color: black;
+color: var(--txt-color);
 }
 
 .main-header-logo {
@@ -106,7 +137,7 @@ margin-top: 15px;
 .town-list, .bridge-list {
 	width: 400px;
 	height: 256px;
-	background-color: #81B3D2;
+	background-color: var(--special-section-bg-color);
 	color: #fff;
 	text-align: center;
 	vertical-align: center;

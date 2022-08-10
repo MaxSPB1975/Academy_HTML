@@ -121,8 +121,7 @@ ul {
 	list-style: none;
 	}
 header, section, footer {
-	/* --------------------------- position: absolute; -------------------------- */
-	text-align: center;
+		text-align: center;
 }
 a {
 	text-decoration: none;
@@ -141,23 +140,39 @@ a {
 	height: 56px;
 	background-color: var(--section-bg-color);
 	font-weight: 700;
+	line-height: 26px;
 }
 
-
 .site-navigation {
-
+	display: flex;
+	/* -------------------------- align-items: center; -------------------------- */
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
 }
 
 .nav-item {
-display: inline;
-vertical-align: middle;
-padding: 15px 67px 15px 36px;
+	padding-top: 15px;
 }
-.nav-button{
+.nav-item:nth-child(3) {
+	padding-top: 0px;
+}
+
+.nav-button {
 color: var(--txt-color);
+}
+.nav-button:hover {
+	color: var(--nav-move);
+}
+.nav-button:active {
+	color: var(--nav-click);
+}
+.nav-button:visited {
+	color: var(--nav-focus);
 }
 
 .main-header-logo {
+	vertical-align: top;
 	z-index: 10;
 }
 /* ----------------------------- section Welcome ---------------------------- */
@@ -182,7 +197,9 @@ margin-top: 15px;
 }
 /* ------------------------------ section About ----------------------------- */
 .about {
-	
+	width: 1200px;
+	height: 216px;
+	background-color: var(--section-bg-color);
 	}
 .about-header {
 	width: 470px;

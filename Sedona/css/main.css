@@ -205,7 +205,7 @@ margin-top: 15px;
 	width: 470px;
 	line-height: 26px;
 	margin: auto;
-	margin-top: 56px;
+	padding-top: 56px;
 }
 .about-features {
 	line-height: 26px;
@@ -221,17 +221,83 @@ margin-top: 15px;
 	text-align: center;
 	vertical-align: center;
 }
+.town-list {
+	float: left;
+}
+.bridge-list {
+	float:right;
+}
 .town-item, .bridge-item {
 	text-align: center;
 	vertical-align: center;
+		}
+	.item__header { 
+	padding-top: 47px;
+	/* -------------------------- padding-left: 139px; -------------------------- */
+	/* -------------------------- padding-right: 139px; ------------------------- */
+	line-height: 21px;
+	}
+	.item__number {
+	padding-top: 25px;
+	line-height: 21px;
+	}
+	.item__context  {
+	padding-top: 23px;
+	/* --------------------------- padding-left: 49px; -------------------------- */
+	/* -------------------------- padding-right: 49px; -------------------------- */
+	line-height: 21px;
+	}
+.town-img {
 }
+.bridge-list>.item__header {
+padding-right: 126px;
+padding-left: 126px;
+}
+
+
+/* ------------------------------ Преимущества ------------------------------ */
+.features-list>li:nth-child(2) {
+	padding-left: 130px;
+	padding-right: 130px;	
+
+}
+.twn-item>.item__logo {
+	padding-top: 60px;
+}
+.twn-item>.item__header {
+	padding-top: 30px;
+}
+
+.twn-item>.item_context {
+padding-top: 30px;
+padding-bottom: 82px;
+}
+.feature-item {
+	display:inline-block;
+}
+.item__logo {
+
+}
+.item__header {
+	line-height: 21px;
+}
+
+.item__number {
+	line-height: 21px;
+	}
+
+.item__context	{
+	line-height: 21px;
+	}
+
+
 /* ------------------------------- search-form ------------------------------ */
 .button {
 	background-color: #766357;
 	color: #fff;
 	font-weight: 700;
-border: none;
-padding: 30px 124px;
+	border: none;
+	padding: 30px 124px;
 }
 .search-form {
 	text-align: center;

@@ -190,7 +190,7 @@ color: var(--txt-color);
 	}
 	.welcome-sedona {
 		margin-top: 53px;
-	box-sizing: ;	
+	box-sizing: border-box;	
 	}
 
 .figure-pic {

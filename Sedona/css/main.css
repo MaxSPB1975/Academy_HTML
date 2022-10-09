@@ -1,9 +1,5 @@
-/*@font-face {
-font-family: 'PT Sans', "Arial", sans-serif;
-font-style: normal;
-font-weight: 700;
-}*/
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+
 
 /* -------------------------- Variables -------------------------- */
 :root {
@@ -32,6 +28,7 @@ font-weight: 700;
 --calendar-move: #000000;
 --calendar-click: #81B3D2;
 /* ---------------------- кнопки уменьшения-увеличения ---------------------- */
+--btn-updwn-bg: #F2F2F2;
 --btn-updwn-peace: #A9A9A9;
 --btn-updwn-move: #000000;
 --btn-updwn-click: #81B3D2;
@@ -95,8 +92,12 @@ font-weight: 700;
 --logo-ha-move: #81B3D2;
 --logo-ha-click: #BDBBBC;
 
-
 }
+*{
+	margin: 0;
+	padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 
 .page-body {
 	font-family: "PT Sans", "Arial", sans-serif;
@@ -112,51 +113,64 @@ font-weight: 700;
 	margin: auto;
 }
 
-h3, p, ul, li, a, img, button  {
-	padding: 0;
-	margin: 0;
-}
-
 ul {
 	list-style: none;
 	}
+
 header, section, footer {
 		text-align: center;
+		margin: auto;
 }
+
 a {
 	text-decoration: none;
 }
 
 	.nav-item, .town-item, .feature-item,
 	.bridge-item, .search-item,
-	.about-header, .button,
+	.about-header, .about-features, .button,
 	.contact-item, .develop-item  {
 	text-transform: uppercase;
 }
 
 /* ------------------------------- navigation ------------------------------- */
-.main-navigation {
-	width: 1200px;
+.main-header {
 	height: 56px;
 	background-color: var(--section-bg-color);
 	font-weight: 700;
+}
+
+.main-navigation {
+	width: 1200px;
 	line-height: 26px;
+	/* --------------------------- padding-top: 15px; --------------------------- */
+}
+
+.main-navigation ul {
+	display: flex;
+ justify-content: space-around;
+}
+
+.main-navigation ul li {
+	margin-top: 15px;
+}
+.main-navigation ul .main-header-logo {
+	margin-top: 0;
+	display: block;
+	position: absolute;
+	 
 }
 
 .site-navigation {
-	display: flex;
-	/* -------------------------- align-items: center; -------------------------- */
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-around;
+	
 }
 
 .nav-item {
-	padding-top: 15px;
+	/*display: inline;
+	padding-left: 72px;
+	padding-right: 72px;*/
 }
-.nav-item:nth-child(3) {
-	padding-top: 0px;
-}
+
 
 .nav-button {
 color: var(--txt-color);
@@ -171,31 +185,23 @@ color: var(--txt-color);
 	color: var(--nav-focus);
 }
 
-.main-header-logo {
-	vertical-align: top;
-	z-index: 10;
-}
+
 /* ----------------------------- section Welcome ---------------------------- */
 .welcome {
-	display: block;
+	background: url("https://maxspb1975.github.io/Academy_HTML/Sedona/img/main/sec1_Shape.svg")
+					center bottom no-repeat,
+			url("https://maxspb1975.github.io/Academy_HTML/Sedona/img/main/sec1_welcome01.svg")
+					center 78px no-repeat,
+			url("https://maxspb1975.github.io/Academy_HTML/Sedona/img/main/sec1_gorgeous01.svg")
+					center 136px no-repeat,
+			url("https://maxspb1975.github.io/Academy_HTML/Sedona/img/main/sec1_Sedona.svg")
+					center 217px no-repeat,
+			url("https://maxspb1975.github.io/Academy_HTML/Sedona/img/main/sec1_bg_photo.jpg")
+					no-repeat;
+
 	width: 1200px;
 	height: 509px;
-	background: 	 url("../img/main/sec1_bg_photo.png") no-repeat center;
-}
-.welcome-pic {
-	margin-top: 78px;
 	}
-.welcome-gorgeous {
-	margin-top: 10px;
-	}
-	.welcome-sedona {
-		margin-top: 53px;
-	box-sizing: border-box;	
-	}
-
-.figure-pic {
-margin-top: 15px;
-}
 /* ------------------------------ section About ----------------------------- */
 .about {
 	width: 1200px;
@@ -204,6 +210,7 @@ margin-top: 15px;
 	}
 .about-header {
 	width: 470px;
+	font-size: 21px;
 	line-height: 26px;
 	margin: auto;
 	padding-top: 56px;
@@ -211,12 +218,12 @@ margin-top: 15px;
 .about-features {
 	line-height: 26px;
 	margin-top: 30px;
-	margin-bottom: 51px;
-}
+	margin-bottom: 52px;
+	}
 /* ------------------------------ section Town ------------------------------ */
 .town-list, .bridge-list {
 	width: 400px;
-	height: 256px;
+	/* ----------------------------- height: 256px; ----------------------------- */
 	background-color: var(--special-section-bg-color);
 	color: #fff;
 	text-align: center;
@@ -232,18 +239,25 @@ margin-top: 15px;
 	text-align: center;
 	vertical-align: center;
 		}
-	.item__header { 
-	padding-top: 47px;
+	.item__header {
+	 /* ------------------------------ width: 149px; ----------------------------- */
+		height: 43px;
+		margin: auto;
+			padding-top: 47px;
 	/* -------------------------- padding-left: 139px; -------------------------- */
 	/* -------------------------- padding-right: 139px; ------------------------- */
 	line-height: 21px;
+	font-size: 21px;
 	}
 	.item__number {
+		height: 21px;
 	padding-top: 25px;
 	line-height: 21px;
 	}
 	.item__context  {
+		height: 43px;
 	padding-top: 23px;
+	padding-bottom: 54px;
 	/* --------------------------- padding-left: 49px; -------------------------- */
 	/* -------------------------- padding-right: 49px; -------------------------- */
 	line-height: 21px;
@@ -257,14 +271,17 @@ padding-left: 126px;
 
 
 /* ------------------------------ Преимущества ------------------------------ */
+.features-list {
+	margin-top: 60px;
+	margin-bottom: 28px;
+
+}
 .features-list>li:nth-child(2) {
 	padding-left: 130px;
 	padding-right: 130px;	
 
 }
-.twn-item>.item__logo {
-	padding-top: 60px;
-}
+
 .twn-item>.item__header {
 	padding-top: 30px;
 }
@@ -274,14 +291,12 @@ padding-top: 30px;
 padding-bottom: 82px;
 }
 .feature-item {
-	display:inline-block;
+	display: inline-block;
 }
 .item__logo {
 
 }
-.item__header {
-	line-height: 21px;
-}
+
 
 .item__number {
 	line-height: 21px;
@@ -290,16 +305,38 @@ padding-bottom: 82px;
 .item__context	{
 	line-height: 21px;
 	}
-
+/* --------------------------------- search --------------------------------- */
+.search {
+	background: var(--section-bg-color);
+}
+.search-item__header {
+	margin-top: 58px;
+	margin-bottom: 4px;
+	}
+	
+	.search-item__context {
+		width: 435px;
+		height: 95px;
+	margin:auto;
+	line-height: 24px;
+	}
+	.button {
+		background-color: #766357;
+		color: #fff;
+		font-weight: 700;
+		border: none;
+		padding: 30px 124px;
+	}
 
 /* ------------------------------- search-form ------------------------------ */
-.button {
-	background-color: #766357;
-	color: #fff;
-	font-weight: 700;
-	border: none;
-	padding: 30px 124px;
+.search-form {
+	width: 568px;
+	height: 395px;
+	margin: auto;
+	
 }
+
+
 .search-form {
 	text-align: center;
 	width: 568px;
@@ -307,7 +344,44 @@ padding-bottom: 82px;
 	background-color:#fff;
 
 }
-.search-form > button {
+.search-form label {
+	font-weight: 700;	
+text-transform: uppercase;
+}
+.search-form input {
+	background-color: var(--field-peace);
+	border: none;
+	font-weight: 700;	
+	text-transform: uppercase;
+	}
+
+	.search-form #search-date-entry, #search-date-leave {
+		
+		/* ------------------------------ height: 38px; ----------------------------- */
+		padding-left: 13px ;
+		padding-right: 150px;
+		padding-top: 6px;
+		padding-bottom: 6px;
+		border: none;
+	}
+.search-form #search-adult, #search-child {
+	/* ------------------------------ height: 38px; ----------------------------- */
+	padding-top: 6px;
+	padding-bottom: 6px;
+	border: none;
+	margin: 0;
+	}
+
+.search-form .buttom {
+	border: none;
+	font-weight: 700;
+	background-color: var(--btn-updwn-bg);
+	color: var(--btn-updwn-peace);
+	padding: 6px 8px 6px 8px;
+	margin: 0;
+}
+
+.search-form  button {
 	background-color: #81B3D2;
 	padding: 16px 182px;
 }

@@ -77,10 +77,10 @@
 --txt-sort-move: #81B3D2;
 --txt-sort-click: #000000;
 --txt-sort-focus: #81B3D2;
---btn-dwn-border-thicknesы-peace: 1px;
+--btn-dwn-border-thickness-peace: 1px;
 --btn-dwn-border-line-peace: dashed;
 --btn-dwn-border-color-peace: #81B3D2;
---btn-dwn-border-thicknesы-move: 1px;
+--btn-dwn-border-thickness-move: 1px;
 --btn-dwn-border-line-move: dashed;
 --btn-dwn-border-color-move: #81B3D2;
 /* --------------------------- наименование отеля --------------------------- */
@@ -188,15 +188,15 @@ color: var(--txt-color);
 
 /* ----------------------------- section Welcome ---------------------------- */
 .welcome {
-	background: url("https://maxspb1975.github.io/Academy_HTML/Sedona/img/main/sec1_Shape.svg")
+	background: url("../img/main/sec1_Shape.svg")
 					center bottom no-repeat,
-			url("https://maxspb1975.github.io/Academy_HTML/Sedona/img/main/sec1_welcome01.svg")
+			url("../img/main/sec1_welcome01.svg")
 					center 78px no-repeat,
-			url("https://maxspb1975.github.io/Academy_HTML/Sedona/img/main/sec1_gorgeous01.svg")
+			url("../img/main/sec1_gorgeous01.svg")
 					center 136px no-repeat,
-			url("https://maxspb1975.github.io/Academy_HTML/Sedona/img/main/sec1_Sedona.svg")
+			url("../img/main/sec1_Sedona.svg")
 					center 217px no-repeat,
-			url("https://maxspb1975.github.io/Academy_HTML/Sedona/img/main/sec1_bg_photo.jpg")
+			url("../img/main/sec1_bg_photo.jpg")
 					no-repeat;
 
 	width: 1200px;
@@ -308,54 +308,73 @@ padding-bottom: 82px;
 /* --------------------------------- search --------------------------------- */
 .search {
 	background: var(--section-bg-color);
+
 }
-.search-item__header {
-	margin-top: 58px;
-	margin-bottom: 4px;
+
+.search-content {
+	width: 568px;
+	/* ----------------------------- height: 395px; ----------------------------- */
+	margin: auto;
+	z-index: 2;
+}
+.search-content .btn-search-hotel {
+	text-transform: uppercase;
+	color:var(--btn-txt-act);
+	font-weight: 700;
+	font-size: 21px;
+	line-height: 26px;
+	border: none;
+  background-color: var(--special-btn-search-act);
+  padding: 30px;
+	width: 568px
+}
+
+.search-header {
+	text-transform: uppercase;
+	font-size: 30px;
+	line-height: 24px;
+	padding-top: 58px;
+	padding-bottom: 4px;
 	}
-	
-	.search-item__context {
+.search-context {
 		width: 435px;
 		height: 95px;
-	margin:auto;
+		margin:auto;
+		text-align: center;
+		margin-bottom: 24px; 
+
+	border: 1px dashed red;
+	}
+.search-context p {
 	line-height: 24px;
-	}
-	.button {
-		background-color: #766357;
-		color: #fff;
-		font-weight: 700;
-		border: none;
-		padding: 30px 124px;
-	}
+	padding-top: 24px;
+	text-transform: uppercase;
+}
 
 /* ------------------------------- search-form ------------------------------ */
 .search-form {
-	width: 568px;
+		width: 568px;
 	height: 395px;
-	margin: auto;
+	background-color:var(--section-bg-color);
 	
 }
-
-
-.search-form {
-	text-align: center;
-	width: 568px;
-	height: 395px;
-	background-color:#fff;
-
+	.search-form_content {
+	text-align: left;
+	padding: 55px;
 }
-.search-form label {
+
+.form label {
 	font-weight: 700;	
 text-transform: uppercase;
 }
-.search-form input {
+.form input {
 	background-color: var(--field-peace);
 	border: none;
 	font-weight: 700;	
 	text-transform: uppercase;
 	}
 
-	.search-form #search-date-entry, #search-date-leave {
+	.form #search-date-entry, #search-date-leave {
 		
 		/* ------------------------------ height: 38px; ----------------------------- */
 		padding-left: 13px ;
@@ -364,15 +383,16 @@ text-transform: uppercase;
 		padding-bottom: 6px;
 		border: none;
 	}
-.search-form #search-adult, #search-child {
+.form #search-adult, #search-child {
 	/* ------------------------------ height: 38px; ----------------------------- */
 	padding-top: 6px;
 	padding-bottom: 6px;
+	padding-right: 0px;
 	border: none;
 	margin: 0;
 	}
 
-.search-form .buttom {
+.form .buttom {
 	border: none;
 	font-weight: 700;
 	background-color: var(--btn-updwn-bg);
@@ -381,32 +401,111 @@ text-transform: uppercase;
 	margin: 0;
 }
 
-.search-form  button {
-	background-color: #81B3D2;
+.form  .btn-find {
+	background-color: var(--btn-search-act);
 	padding: 16px 182px;
+	color: var(--btn-txt-act);
+	font-weight: 700;
+	font-size: 21px;
+	line-height: 26px;
+	border: none;
+	text-align: center;
+	text-transform: uppercase;
+
+}
+/* ----------------------------------- map ---------------------------------- */
+.map {
+	background: url("../img/main/map.png") center no-repeat;
+	width: 1200px;
+	height: 594px;
+	margin-top: -395px;
+	margin-bottom: -120px;
+	
+	z-index: 0;
 }
 /* --------------------------------- footer --------------------------------- */
 .footer {
-	
+	background: var(--section-bg-color);
+	opacity: 0.9;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
-/* -------------------------------- contacts -------------------------------- */
-.contacts {
-	
+
+.footer ul {
+	list-style: none;
 }
-.contact-insta, .contact-phone {
-	color:black;
-	font-weight: 700;
+.footer ul li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: black;
 }
-/* ------------------------------ social-icons ------------------------------ */
-.social-item {
-	display: inline;
-	background-color: #81B3D2; /*in peace*/
-	padding: 10px;
-	margin: 00px 10px ;
+.contacts,
+.socials {
+	padding-top: 23px;
+	padding-bottom: 36px;
+	font-size: 21px;
+	font-height: 28px;
 }
-.social-buttom {
+.contacts-list {
 	text-align: center;
-	vertical-align: middle;
-	width:46px;
+	font-weight: 700;
+	line-height: 26px;
+}
+.contact-item:nth-child(2) {
+	margin-top: 9px;
+}
+.socials {
+}
+.social-list {
+}
+.social-item {
+	display: inline-block;
+}
+
+.social-item:nth-child(2) {
+	margin-left: 6px;
+	margin-right: 6px;
+}
+.social-btn {
+	background-color: #81b3d2;
+	width: 46px;
 	height: 48px;
+}
+
+.twitter {
+	/* display: block;*/
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 15px;
+	padding-right: 14px;
+	margin: auto;
+}
+.fb {
+	/*display: block;*/
+	padding: 13px 17px;
+	margin: auto;
+}
+.yt {
+	/* display: block;*/
+	padding: 16px 13px;
+	margin: auto;
+}
+.develop-list {
+	display: flex;
+}
+.develop-item {
+	display: inline-block;
+}
+.dev-item_txt {
+	font-size: 14px;
+	line-height: 26px;
+	text-transform: uppercase;
+}
+.dev-item_content {
+	vertical-align: middle;
+}
+.ha_logo {
+	display: block;
+	margin-left: 15px;
 }

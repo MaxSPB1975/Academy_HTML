@@ -371,61 +371,106 @@ padding-bottom: 82px;
 	left: 55px
 	
 }
-.form-item {
+.form .form-item {
 	margin-top: 30px;
 	text-align: left;
 	}
-.form-item:nth-child(1) {
+
+.form .form-item:nth-child(1) {
 	margin-top: 0px;
 	}
-	.form-item:nth-child(4) {
+.form	.form-item:nth-child(4) {
 		float: right;
 margin-top: 0;
-
-		
 	}
 
 .form label {
-	font-weight: 700;	
+font-weight: 700;	
 text-transform: uppercase;
-
+line-height: 26px;
 }
+
 .form input {
 	background-color: var(--field-peace);
 	border: none;
 	font-weight: 700;	
 	text-transform: uppercase;
-	margin-left: 20px;
-	width: 346px;
+	line-height: 26px;
+	/* --------------------------- margin-left: 20px; --------------------------- */
+	}
+	.date {
+		display: flex;
+    align-items: center;
+		justify-content: space-between;
+		position: relative;
+		
+	}
+	.date:nth-child(2) {
+		margin-top: 30px;
+	}
+.date-name {
+	width: 125px;
+}
+	.date-input {
+		background: var(--field-peace);
+		display: flex;
+		
+		width: 346px;
+		height: 38px;
+		
+	}
+
+	.date-pic {
+		position: absolute;
+		top: 7px;
+		right: 9px;
 	}
 
 	.form	input[type="date"] {
-		
-		/* ------------------------------ height: 38px; ----------------------------- */
-		padding-left: 13px ;
-		padding-top: 6px;
-		padding-bottom: 6px;
+		/* ---------------------------- padding-top: 6px; --------------------------- */
+		/* -------------------------- padding-bottom: 6px; -------------------------- */
 		border: none;
+		margin-left: 13px;
 	}
 /*скрыть элемент календаря*/
 	input[type="date"]::-webkit-calendar-picker-indicator {
     opacity: 0;
 		}
-.form .change {
+		.form .persons {
+		display: flex;
+		align-content: center;
+    justify-content: space-between;
+    align-items: center;
+		margin-top: 30px;
+		}
+
+.persons .change {
+	display: flex;
+	align-content: center;
+	justify-content: space-between;
+	align-items: center;
 	height: 38px;
 	width: 114px;
 	background-color: var(--btn-updwn-bg);
+}
+.persons .change:first-child {
 	
-	
-}		
-.form .num {
+}
+.change .minus {
+	margin: 18px 14px 17px 13px;
+}
+.change .plus {
+	margin: 14px 14px 13px 13px;
+}
+.persons .num {
 	/* ------------------------------ height: 38px; ----------------------------- */
 	height: 26px;
-	width: 24px;
+	width: 36px;
 	text-align: center;
 	border: none;
 	margin: 0;
 	}
+
 	/*скрыть кнопки увеличения-уменьшения значения*/
 	input[type="number"]::-webkit-inner-spin-button {
 		opacity: 0;
@@ -441,8 +486,9 @@ text-transform: uppercase;
 }
 
 .form  .btn-find {
-	background-color: var(--btn-search-act);
+		background-color: var(--btn-search-act);
 	padding: 16px 182px;
+	/* ------------------------------ width: 458px; ----------------------------- */
 	color: var(--btn-txt-act);
 	font-weight: 700;
 	font-size: 21px;

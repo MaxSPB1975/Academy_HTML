@@ -150,40 +150,52 @@
       <h2 class="" hidden>Форма поиска гостиницы</h2>
       <div class="search-form_content">
         <form class="form" action="" method="">
-          <p class="form-item">
-            <label for="search-date-entry">
-              Дата заезда:
-              <input type="date" id="search-date-entry" name="date-entry" value="24.04.2017">
-            </label>
-          </p>
-          <p class="form-item">
-            <label for="search-date-leave">
-              Дата выезда:
-              <input type="date" id="search-date-leave" name="date-leave" value="4 июля 2017">
-            </label>
-          </p>
+          <div class="date">
+            <p class="form-item">
+              <label for="search-date-entry" class="date-name">
+                Дата заезда:
+                <div class="date-input">
+                  <input type="date" id="search-date-entry" name="date-entry" value="24.04.2017">
+                  <img src="./img/main/calendar.svg" alt="Выбрать дату" class="date-pic">
+                </div>
+              </label>
+            </p>
+          </div>
+          <div class="date">
+            <p class="form-item">
+              <label for="search-date-leave" class="date-name">
+                Дата выезда:
+                <div class="date-input">
+                  <input type="date" id="search-date-leave" name="date-leave" value="4 июля 2017">
+                  <img src="./img/main/calendar.svg" alt="Выбрать дату" class="date-pic">
+                </div>
+              </label>
+            </p>
+          </div>
           <!-- --------------------------- кол-во взрослых --------------------------- -->
-          <p class="form-item">
-            <label for="search-adult">
-              Взрослые:
-              <div class="change">
-                <button class="buttom">-</button>
-                <input type="number" id="search-adult" name="adult" min="0" value="2" step="1" class="num">
-                <button class="buttom">+</button>
-              </div>
-            </label>
-          </p>
-          <!-- ---------------------------- кол-во детей ----------------------------- -->
-          <p class="form-item">
-            <label for="search-child">
-              Дети:
-              <div class="change">
-                <button class="buttom">-</button>
-                <input type="number" id="search-child" name="child" min="0" value="0" step="1" class="num">
-                <button class="buttom">+</button>
-              </div>
-            </label>
-          </p>
+          <div class="persons">
+            <p class="form-item">
+              <label for="search-adult">
+                Взрослые:
+                <div class="change">
+                  <img src="./img/main/minus.svg" alt="Уменьшить" class="minus">
+                  <input type="number" id="search-adult" name="adult" min="0" value="2" step="1" class="num">
+                  <img src="./img/main/plus.svg" alt="Увеличить" class="plus">
+                </div>
+              </label>
+            </p>
+            <!-- ---------------------------- кол-во детей ----------------------------- -->
+            <p class="form-item">
+              <label for="search-child">
+                Дети:
+                <div class="change">
+                  <img src="./img/main/minus.svg" alt="Уменьшить" class="minus">
+                  <input type="number" id="search-adult" name="adult" min="0" value="2" step="1" class="num">
+                  <img src="./img/main/plus.svg" alt="Увеличить" class="plus">
+                </div>
+              </label>
+            </p>
+          </div>
           <button type="button" class="btn-find">Найти</button>
         </form>
       </div>

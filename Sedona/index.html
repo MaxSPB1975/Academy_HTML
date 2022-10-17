@@ -166,18 +166,22 @@
           <p class="form-item">
             <label for="search-adult">
               Взрослые:
-              <button class="buttom">-</button>
-              <input type="number" id="search-adult" name="adult" min="0" value="2" step="1">
-              <button class="buttom">+</button>
+              <div class="change">
+                <button class="buttom">-</button>
+                <input type="number" id="search-adult" name="adult" min="0" value="2" step="1" class="num">
+                <button class="buttom">+</button>
+              </div>
             </label>
           </p>
           <!-- ---------------------------- кол-во детей ----------------------------- -->
           <p class="form-item">
             <label for="search-child">
               Дети:
-              <button class="buttom">-</button>
-              <input type="number" id="search-child" name="child" min="0" value="0" step="1">
-              <button class="buttom">+</button>
+              <div class="change">
+                <button class="buttom">-</button>
+                <input type="number" id="search-child" name="child" min="0" value="0" step="1" class="num">
+                <button class="buttom">+</button>
+              </div>
             </label>
           </p>
           <button type="button" class="btn-find">Найти</button>

@@ -315,7 +315,7 @@ padding-bottom: 82px;
 	width: 568px;
 	/* ----------------------------- height: 395px; ----------------------------- */
 	margin: auto;
-	z-index: 2;
+	
 }
 .search-content .btn-search-hotel {
 	text-transform: uppercase;
@@ -358,38 +358,78 @@ padding-bottom: 82px;
 	background-color:var(--section-bg-color);
 	
 }
-	.search-form_content {
-	text-align: left;
-	padding: 55px;
+
+.search-form {
+	text-align: center;
+	margin: auto;
+	position: relative;
 }
+
+.search-form_content {
+	position: absolute;
+	top: 55px;
+	left: 55px
+	
+}
+.form-item {
+	margin-top: 30px;
+	text-align: left;
+	}
+.form-item:nth-child(1) {
+	margin-top: 0px;
+	}
+	.form-item:nth-child(4) {
+		float: right;
+margin-top: 0;
+
+		
+	}
 
 .form label {
 	font-weight: 700;	
 text-transform: uppercase;
+
 }
 .form input {
 	background-color: var(--field-peace);
 	border: none;
 	font-weight: 700;	
 	text-transform: uppercase;
+	margin-left: 20px;
+	width: 346px;
 	}
 
-	.form #search-date-entry, #search-date-leave {
+	.form	input[type="date"] {
 		
 		/* ------------------------------ height: 38px; ----------------------------- */
 		padding-left: 13px ;
-		padding-right: 150px;
 		padding-top: 6px;
 		padding-bottom: 6px;
 		border: none;
 	}
-.form #search-adult, #search-child {
+/*скрыть элемент календаря*/
+	input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+		}
+.form .change {
+	height: 38px;
+	width: 114px;
+	background-color: var(--btn-updwn-bg);
+	
+	
+}		
+.form .num {
 	/* ------------------------------ height: 38px; ----------------------------- */
-	padding-top: 6px;
-	padding-bottom: 6px;
-	padding-right: 0px;
+	height: 26px;
+	width: 24px;
+	text-align: center;
 	border: none;
 	margin: 0;
+	}
+	/*скрыть кнопки увеличения-уменьшения значения*/
+	input[type="number"]::-webkit-inner-spin-button {
+		opacity: 0;
+		
 	}
 
 .form .buttom {
@@ -397,7 +437,6 @@ text-transform: uppercase;
 	font-weight: 700;
 	background-color: var(--btn-updwn-bg);
 	color: var(--btn-updwn-peace);
-	padding: 6px 8px 6px 8px;
 	margin: 0;
 }
 
@@ -411,6 +450,8 @@ text-transform: uppercase;
 	border: none;
 	text-align: center;
 	text-transform: uppercase;
+	margin-top: 54px;
+	margin-bottom: 55px;
 
 }
 /* ----------------------------------- map ---------------------------------- */

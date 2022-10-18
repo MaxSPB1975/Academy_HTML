@@ -391,7 +391,7 @@ line-height: 26px;
 }
 
 .form input {
-	background-color: var(--field-peace);
+	background: var(--field-peace);
 	border: none;
 	font-weight: 700;	
 	text-transform: uppercase;

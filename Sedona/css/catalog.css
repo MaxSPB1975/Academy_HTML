@@ -1,0 +1,103 @@
+/* -------------------------- Variables -------------------------- */
+:root {
+	--bg-color: aqua;
+	--section-bg-color: #fff;
+	--special-section-bg-color: #81B3D2;
+	--txt-color: #000;
+	--special-section-txt-color: #fff;
+	/* ----------------------------- меню навигации ----------------------------- */
+	--nav-peace: #000000;
+	--nav-move: #81B3D2;
+	--nav-click: rgba(0, 0, 0, 0.3);
+	--nav-focus: #766357;
+	/* ---------------------------- поля формы поиска --------------------------- */
+	--field-peace: #F2F2F2;
+	--field-peace-border: #F2F2F2;
+	--field-peace-border-thiсkness: 2px;
+	--field-move: #EBEBEB;
+	--field-move-border: #EBEBEB;
+	--field-move-border-thiсkness: 2px;
+	--field-focus-fill: #FFFFFF;
+	--field-focus-border: #E5E5E5;
+	--field-focus-border-thiсkness: 2px;
+	/* -------------------------------- календарь ------------------------------- */
+	--calendar-peace: #A9A9A9;
+	--calendar-move: #000000;
+	--calendar-click: #81B3D2;
+	/* ---------------------- кнопки уменьшения-увеличения ---------------------- */
+	--btn-updwn-bg: #F2F2F2;
+	--btn-updwn-peace: #A9A9A9;
+	--btn-updwn-move: #000000;
+	--btn-updwn-click: #81B3D2;
+	
+	/* ------------------------------ кнопка Найти, кнопка Подробнее ------------------------------ */
+	--btn-search-act: #81B3D2;
+	--btn-search-move: #669EC0;
+	--btn-search-hover: #5496BD;
+	--btn-txt-act: #fff;
+	--btn-txt-move: #fff;
+	--special-btn-txt-click: rgba(255, 255, 255, 0.3);
+	/* --------------------- кнопка Поиск гостиницы в Седоне, кнопка Забронировать --------------------- */
+	--special-btn-search-act: #766357;
+	--special-btn-search-move: #604E43;
+	--special-btn-search-hover: #503E33;
+	--special-btn-txt-search-act: #fff;
+	--special-btn-txt-search-move: #fff;
+	--special-btn-txt-search-click: rgba(255, 255, 255, 0.3);
+	/* ----------------------------- кнопки соцсетей ---------------------------- */
+	--soc-btn-active: #81B3D2;
+	--soc-btn-move: #669EC0;
+	--soc-btn-hover: #5496BD;
+	--soc-btn-icon-act: #fff;
+	--soc-btn-icon-move: #fff;
+	--special-soc-btn-icon-click: rgba(255, 255, 255, 0.3);
+	/* -------------------------------- чекбоксы -------------------------------- */
+	--checkbx-peace: #ffffff;
+	--checkbx-move: #ffffff;
+	--checkbx-disable: #6A6A6A;
+	--checkbx-mark-peace: #ffffff;
+	--checkbx-mark-move: #ffffff;
+	--checkbx-mark-disable: #6A6A6A;
+	--btn-slct-peace: #ffffff;
+	--btn-slct-peace-size: 19px;
+	--btn-slct-move: #ffffff;
+	--btn-slct-move-size: 23px;
+	--btn-show-peace: 2px solid #ffffff;
+	--btn-show-move-bg: #ffffff ;
+	
+	/* ---------------------------- кнопки сортировки --------------------------- */
+	--btn-sort-peace: #CACACA;
+	--btn-sort-move: #000000;
+	--btn-sort-click: #81B3D2;
+	--btn-sort-focus: #81B3D2;
+	--txt-sort-peace: rgba(0, 0, 0, 0.3);
+	--txt-sort-move: #81B3D2;
+	--txt-sort-click: #000000;
+	--txt-sort-focus: #81B3D2;
+	--btn-dwn-border-thickness-peace: 1px;
+	--btn-dwn-border-line-peace: dashed;
+	--btn-dwn-border-color-peace: #81B3D2;
+	--btn-dwn-border-thickness-move: 1px;
+	--btn-dwn-border-line-move: dashed;
+	--btn-dwn-border-color-move: #81B3D2;
+	/* --------------------------- наименование отеля --------------------------- */
+	--name-hotel-peace: #000000;
+	--name-hotel-move: #81B3D2;
+	--name-hotel-click: rgba(0, 0, 0, 0.3);
+	/* ---------------------------- лого htmlacademy ---------------------------- */
+	--logo-ha-peace: #000000;
+	--logo-ha-move: #81B3D2;
+	--logo-ha-click: #BDBBBC;
+	
+	}
+
+	* {
+		padding: 0;
+		margin: 0;
+	}
+
+	.filters {
+		width: 1200px;
+		height: 217px;
+		background: url("../img/catalog/filters-bg.png") center center no-repeat;
+	}

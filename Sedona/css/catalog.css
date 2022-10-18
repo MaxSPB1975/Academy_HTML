@@ -53,6 +53,7 @@
 	--soc-btn-icon-move: #fff;
 	--special-soc-btn-icon-click: rgba(255, 255, 255, 0.3);
 	/* -------------------------------- чекбоксы -------------------------------- */
+	--filter-txt-color: #ffffff;
 	--checkbx-peace: #ffffff;
 	--checkbx-move: #ffffff;
 	--checkbx-disable: #6A6A6A;
@@ -81,6 +82,8 @@
 	--btn-dwn-border-thickness-move: 1px;
 	--btn-dwn-border-line-move: dashed;
 	--btn-dwn-border-color-move: #81B3D2;
+	/* -------------------------- цвет значка рейтинга -------------------------- */
+	--char-rating-peace: #81B3D2;
 	/* --------------------------- наименование отеля --------------------------- */
 	--name-hotel-peace: #000000;
 	--name-hotel-move: #81B3D2;
@@ -96,9 +99,68 @@
 		padding: 0;
 		margin: 0;
 	}
+/* --------------------------- стилизация фильтров -------------------------- */
+.filters {
+	width: 1200px;
+	height: 217px;
+	background: url("../img/catalog/filters-bg.png") center center no-repeat;
+}
 
-	.filters {
-		width: 1200px;
-		height: 217px;
-		background: url("../img/catalog/filters-bg.png") center center no-repeat;
+.filters fieldset {
+	border: none;
+	
+}
+
+.filters legend {
+	color: var(--filter-txt-color);
+	text-transform: uppercase;
+}
+
+	/* --------------------------------- рейтинг -------------------------------- */
+.simple-rating {
+	position: relative;
+	font-size: 24px;
+	display: inline-block;
+	color: var(--char-rating-peace);
+
+}
+.rating4::before {
+	display: block;
+	content: "★★★★";
+}
+.rating3::before {
+	display: block;
+	content: "★★★";
+}
+.rating2::before {
+	display: block;
+	content: "★★";
+}
+
+.simple-rating__items {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display:flex;
+	flex-direction: row-reverse;
+	overflow: hidden;
 	}
+
+.simple-rating__item {
+	position: absolute;
+	width: 0%;
+	height: 0%;
+	opacity: 0;
+	visibility: hidden;
+	top: 0;
+	left: 0;
+	
+}
+.simple-rating__label {
+	flex: 0 0 20%;
+	height: 100%;
+	cursor: pointer;
+	
+}

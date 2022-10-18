@@ -1,6 +1,7 @@
 /* -------------------------- Variables -------------------------- */
 :root {
-	--bg-color: aqua;
+	--bg-color: #F2F2F2;
+	--container-bg-color: #fff;
 	--section-bg-color: #fff;
 	--special-section-bg-color: #81B3D2;
 	--txt-color: #000;

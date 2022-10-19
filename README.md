@@ -17,7 +17,7 @@
 - main - окончательный готовый вариант проекта Sedona;
 - index - ветка для работы с index.html;
 - catalog - ветка для работы с catalog.html;
-- blank - ветка для работы сblank.html.
+- blank - ветка для работы с blank.html.
 
 ## Слияние веток
 

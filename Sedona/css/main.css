@@ -1,6 +1,3 @@
-
-
-
 /* -------------------------- Variables -------------------------- */
 :root {
 --bg-color: #F2F2F2;
@@ -9,6 +6,7 @@
 --special-section-bg-color: #81B3D2;
 --txt-color: #000;
 --special-section-txt-color: #fff;
+--filter-txt-color: #fff;
 /* ----------------------------- меню навигации ----------------------------- */
 --nav-peace: #000000;
 --nav-move: #81B3D2;
@@ -65,9 +63,11 @@
 --btn-slct-peace: #ffffff;
 --btn-slct-peace-size: 19px;
 --btn-slct-move: #ffffff;
---btn-slct-move-size: 23px;
---btn-show-peace: 2px solid #ffffff;
---btn-show-move-bg: #ffffff ;
+--chkb-size: 23px;
+--chkb-brdr-line: 2px;
+--chkb-brdr-style: solid;
+--chkb-brdr-clr: #ffffff;
+--btn-show-move-bg: #ffffff;
 
 /* ---------------------------- кнопки сортировки --------------------------- */
 --btn-sort-peace: #CACACA;

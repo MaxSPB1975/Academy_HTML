@@ -6,6 +6,7 @@
 	--special-section-bg-color: #81B3D2;
 	--txt-color: #000;
 	--special-section-txt-color: #fff;
+	--filter-txt-color: #fff;
 	/* ----------------------------- меню навигации ----------------------------- */
 	--nav-peace: #000000;
 	--nav-move: #81B3D2;
@@ -53,19 +54,20 @@
 	--soc-btn-icon-move: #fff;
 	--special-soc-btn-icon-click: rgba(255, 255, 255, 0.3);
 	/* -------------------------------- чекбоксы -------------------------------- */
-	--filter-txt-color: #ffffff;
-	--checkbx-peace: #ffffff;
-	--checkbx-move: #ffffff;
-	--checkbx-disable: #6A6A6A;
-	--checkbx-mark-peace: #ffffff;
-	--checkbx-mark-move: #ffffff;
-	--checkbx-mark-disable: #6A6A6A;
+	--chckb-peace: #ffffff;
+	--chckb-move: #ffffff;
+	--chckb-disable: #6A6A6A;
+	--chckb-mark-peace: #ffffff;
+	--chckb-mark-move: #ffffff;
+	--chckb-mark-disable: #6A6A6A;
 	--btn-slct-peace: #ffffff;
 	--btn-slct-peace-size: 19px;
 	--btn-slct-move: #ffffff;
-	--btn-slct-move-size: 23px;
-	--btn-show-peace: 2px solid #ffffff;
-	--btn-show-move-bg: #ffffff ;
+	--chkb-size: 23px;
+	--chkb-brdr-line: 2px;
+	--chkb-brdr-style: solid;
+	--chkb-brdr-clr: #ffffff;
+	--btn-show-move-bg: #ffffff;
 	
 	/* ---------------------------- кнопки сортировки --------------------------- */
 	--btn-sort-peace: #CACACA;
@@ -82,8 +84,6 @@
 	--btn-dwn-border-thickness-move: 1px;
 	--btn-dwn-border-line-move: dashed;
 	--btn-dwn-border-color-move: #81B3D2;
-	/* -------------------------- цвет значка рейтинга -------------------------- */
-	--char-rating-peace: #81B3D2;
 	/* --------------------------- наименование отеля --------------------------- */
 	--name-hotel-peace: #000000;
 	--name-hotel-move: #81B3D2;
@@ -104,19 +104,44 @@
 	width: 1200px;
 	height: 217px;
 	background: url("../img/catalog/filters-bg.png") center center no-repeat;
+	
 }
 
 .filters fieldset {
 	border: none;
 	
 }
-
+/*стилизация текста полей фильтров*/
 .filters legend {
 	color: var(--filter-txt-color);
 	text-transform: uppercase;
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 21px;
+}
+form {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 26.5px;
+}
+fieldset {
+	text-align: left;
+
+}
+fieldset li {
+	color: var(--filter-txt-color);
+	text-transform: uppercase;
+	line-height: 21px;
+}
+/*стилизайция  чекбоксов*/
+fieldset input[type="checkbox"] {
+width: var(--chkb-size);
+height: var(--chkb-size);
+border: var(--chkb-brdr-line) var(--chkb-brdr-style) grey/*var(--chkb-brdr-clr)*/;
+}
+/**стилизация полей цен*/
+fieldset input[type="number"] {
+	border: var(--chkb-brdr-line) var(--chkb-brdr-style) grey/*var(--chkb-brdr-clr)*/;
 }
 
 	/* --------------------------------- рейтинг -------------------------------- */

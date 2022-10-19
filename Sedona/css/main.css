@@ -587,12 +587,12 @@ line-height: 26px;
 .develop-item {
 	display: inline-block;
 }
-.dev-item_txt {
+.dev-item__txt {
 	font-size: 14px;
 	line-height: 26px;
 	text-transform: uppercase;
 }
-.dev-item_content {
+.dev-item__content {
 	vertical-align: middle;
 }
 .ha_logo {

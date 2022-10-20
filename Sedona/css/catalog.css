@@ -155,6 +155,7 @@ fieldset input[type="number"] {
 .cost-item__btn {
 	color: var(--btn-slct-peace);
 	background: none;
+	
 	border: 
 		var(--brdr-line)
 		var(--brdr-style)

@@ -62,12 +62,14 @@
 	--chckb-mark-disable: #6A6A6A;
 	--btn-slct-peace: #ffffff;
 	--btn-slct-peace-size: 19px;
-	--btn-slct-move: #ffffff;
+	--btn-slct-move: #000000;
+	--btn-bg-clr:  #ffffff;
 	--chkb-size: 23px;
-	--chkb-brdr-line: 2px;
-	--chkb-brdr-style: solid;
-	--chkb-brdr-clr: #ffffff;
+	--brdr-line: 2px;
+	--brdr-style: solid;
+	--brdr-clr: #ffffff;
 	--btn-show-move-bg: #ffffff;
+	
 	
 	/* ---------------------------- кнопки сортировки --------------------------- */
 	--btn-sort-peace: #CACACA;
@@ -79,10 +81,10 @@
 	--txt-sort-click: #000000;
 	--txt-sort-focus: #81B3D2;
 	--btn-dwn-border-thickness-peace: 1px;
-	--btn-dwn-border-line-peace: dashed;
+	--btn-dwn-border-line-peace: dotted;
 	--btn-dwn-border-color-peace: #81B3D2;
 	--btn-dwn-border-thickness-move: 1px;
-	--btn-dwn-border-line-move: dashed;
+	--btn-dwn-border-line-move: dotted;
 	--btn-dwn-border-color-move: #81B3D2;
 	/* --------------------------- наименование отеля --------------------------- */
 	--name-hotel-peace: #000000;
@@ -109,6 +111,11 @@
 
 .filters fieldset {
 	border: none;
+	
+}
+.filters fieldset:last-child {
+	display: flex;
+	flex-direction: column;
 	
 }
 /*стилизация текста полей фильтров*/
@@ -142,6 +149,37 @@ border: var(--chkb-brdr-line) var(--chkb-brdr-style) grey/*var(--chkb-brdr-clr)*
 /**стилизация полей цен*/
 fieldset input[type="number"] {
 	border: var(--chkb-brdr-line) var(--chkb-brdr-style) grey/*var(--chkb-brdr-clr)*/;
+}
+
+/*кнопка Показать фильтра цен*/
+.cost-item__btn {
+	color: var(--btn-slct-peace);
+	background: none;
+	border: 
+		var(--brdr-line)
+		var(--brdr-style)
+		var(--brdr-clr);
+	border-radius: 2px;
+	padding: 8px 35px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	text-transform: uppercase;
+}
+
+.cost-item__btn:hover {
+	color: var(--btn-slct-move);
+	background: var(--btn-bg-clr);
+	border: 
+	var(--brdr-line)
+	var(--brdr-style)
+	var(--brdr-clr);
+	border-radius: 2px;
+	padding: 8px 35px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	text-transform: uppercase;
 }
 
 	/* --------------------------------- рейтинг -------------------------------- */
@@ -192,3 +230,80 @@ fieldset input[type="number"] {
 	cursor: pointer;
 	
 }
+
+/*стилизация таблицы*/
+.housing-table {
+	margin: auto;
+}
+table h3 {
+	font-weight: 700;
+	font-size: 21px;
+	line-height: 26px;
+	text-transform: uppercase;
+}
+
+.sort-items {
+		display: flex;
+}
+.sort-items__name {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+.sort-item__btn {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 18px;
+	text-transform: uppercase;
+	background: none;
+	color: var(--txt-sort-peace);
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 
+		var(--btn-dwn-border-thickness-peace)
+		var(--btn-dwn-border-line-peace)
+		var(--btn-dwn-border-color-peace);
+}
+/*наведение мыши*/
+.sort-item__btn:hover {
+	color: var(--txt-sort-move);
+	border-bottom: 
+	var(--btn-dwn-border-thickness-peace)
+	var(--btn-dwn-border-line-peace)
+	var(--btn-dwn-border-color-peace);
+	padding-bottom: 3px;
+	
+}
+/*нажатие мыши*/
+.sort-item__btn:onClick {
+	color: var(--txt-sort-click);
+	border: none;
+}
+/*фокус*/
+.sort-item__btn:focus {
+	color: var(--txt-sort-focus);
+	border: none;	
+}
+/*
+/* ---------------------------- кнопки сортировки --------------------------- */
+--btn-sort-peace: #CACACA;
+--btn-sort-move: #000000;
+--btn-sort-click: #81B3D2;
+--btn-sort-focus: #81B3D2;
+--txt-sort-peace: rgba(0, 0, 0, 0.3);
+--txt-sort-move: #81B3D2;
+--txt-sort-click: #000000;
+--txt-sort-focus: #81B3D2;
+--btn-dwn-border-thickness-peace: 1px;
+--btn-dwn-border-line-peace: dotted;
+--btn-dwn-border-color-peace: #81B3D2;
+--btn-dwn-border-thickness-move: 1px;
+--btn-dwn-border-line-move: dotted;
+--btn-dwn-border-color-move: #81B3D2;
+/* --------------------------- наименование отеля --------------------------- */
+--name-hotel-peace: #000000;
+--name-hotel-move: #81B3D2;
+--name-hotel-click: rgba(0, 0, 0, 0.3);
+	*/

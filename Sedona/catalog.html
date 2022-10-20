@@ -93,14 +93,14 @@
 				<!-- ---------------------------- диапазон цен ----------------------------- -->
 				<fieldset>
 					<legend>Стоимость в сутки, &#8381;:</legend>
-					<ul class="">
-						<li class="">
+					<ul class="costs">
+						<li class="cost-item__min">
 							<label for="filter-min-price">
 								От
 								<input type="number" name="min-price" id="filter-min-price" min="0" value="0" step="1">
 							</label>
 						</li>
-						<li class="">
+						<li class="cost-item__max">
 							<label for="filter-max-price">
 								До
 								<input type="number" name="max-price" id="filter-max-price" min="0" value="3000" step="1">
@@ -110,24 +110,24 @@
 					<!-- ---------------------- ползунки выбора стоимости ----------------------- -->
 					<input type="range" min="0" value="0" step="1" class="">
 					<input type="range" min="0" max="100000" value="3000" step="1" class="">
-					<button type="submit">Показать</button>
+					<button type="submit" class="cost-item__btn">Показать</button>
 				</fieldset>
 
 			</form>
 		</section>
 		<!-- ------------------- 2 секция Таблица с гостиницами -------------------- -->
-		<section class="">
-			<table>
+		<section class="housing">
+			<table class="housing-table">
 				<tr>
 					<td>
 						<h3>Найдено: 3</h3>
 					</td>
 					<td>
-						<p>Сортировка:</p>
-						<ul>
-							<li><a class="">По цене</a></li>
-							<li><a class="">По типу</a></li>
-							<li><a class="">По рейтингу</a></li>
+						<ul class="sort-items">
+							<p class="sort-items__name">Сортировка:</p>
+							<li><button class="sort-item__btn">По цене</button></li>
+							<li><button class="sort-item__btn">По типу</button></li>
+							<li><button class="sort-item__btn">По рейтингу</button></li>
 
 						</ul>
 					</td>

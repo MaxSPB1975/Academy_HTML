@@ -31,20 +31,20 @@
 	--btn-updwn-peace: #A9A9A9;
 	--btn-updwn-move: #000000;
 	--btn-updwn-click: #81B3D2;
-	
+
 	/* ------------------------------ кнопка Найти, кнопка Подробнее ------------------------------ */
 	--btn-search-act: #81B3D2;
 	--btn-search-move: #669EC0;
 	--btn-search-hover: #5496BD;
 	--btn-txt-act: #fff;
 	--btn-txt-move: #fff;
-	--special-btn-txt-click: rgba(255, 255, 255, 0.3);
+
 	/* --------------------- кнопка Поиск гостиницы в Седоне, кнопка Забронировать --------------------- */
-	--special-btn-search-act: #766357;
-	--special-btn-search-move: #604E43;
-	--special-btn-search-hover: #503E33;
+	--special-btn-search-peace: #766357;
+	--special-btn-search-hover: #604E43;
+	--special-btn-search-click: #503E33;
 	--special-btn-txt-search-act: #fff;
-	--special-btn-txt-search-move: #fff;
+	--special-btn-txt-search-hover: #fff;
 	--special-btn-txt-search-click: rgba(255, 255, 255, 0.3);
 	/* ----------------------------- кнопки соцсетей ---------------------------- */
 	--soc-btn-active: #81B3D2;
@@ -69,8 +69,8 @@
 	--brdr-style: solid;
 	--brdr-clr: #ffffff;
 	--btn-show-move-bg: #ffffff;
-	
-	
+
+
 	/* ---------------------------- кнопки сортировки --------------------------- */
 	--btn-sort-peace: #CACACA;
 	--btn-sort-move: #000000;
@@ -94,7 +94,7 @@
 	--logo-ha-peace: #000000;
 	--logo-ha-move: #81B3D2;
 	--logo-ha-click: #BDBBBC;
-	
+
 	}
 *{
 	margin: 0;
@@ -163,11 +163,11 @@ a {
 	margin-top: 0;
 	display: block;
 	position: absolute;
-	 
+
 }
 
 .site-navigation {
-	
+
 }
 
 .nav-item {
@@ -283,7 +283,7 @@ padding-left: 126px;
 }
 .features-list>li:nth-child(2) {
 	padding-left: 130px;
-	padding-right: 130px;	
+	padding-right: 130px;
 
 }
 
@@ -320,7 +320,7 @@ padding-bottom: 82px;
 	width: 568px;
 	/* ----------------------------- height: 395px; ----------------------------- */
 	margin: auto;
-	
+
 }
 .search-content .btn-search-hotel {
 	text-transform: uppercase;
@@ -329,10 +329,22 @@ padding-bottom: 82px;
 	font-size: 21px;
 	line-height: 26px;
 	border: none;
-  background-color: var(--special-btn-search-act);
+  background-color: var(--special-btn-search-peace);
   padding: 30px;
 	width: 568px
 }
+/*наведение на кнопку Поис гостиницы в Седоне*/
+.search-content .btn-search-hotel:hover  {
+	color:var(--btn-txt-act);
+	background-color: var(--special-btn-search-hover);
+}
+/* ----------------- нажатие кнопки Поиск гостиницы в Седоне ---------------- */
+.search-content .btn-search-hotel:onClick {
+	color:var(--special-btn-txt-search-click);
+	border: none;
+  background-color: var(--special-btn-search-click);
+}
+
 
 .search-header {
 	text-transform: uppercase;
@@ -346,7 +358,7 @@ padding-bottom: 82px;
 		height: 95px;
 		margin:auto;
 		text-align: center;
-		margin-bottom: 24px; 
+		margin-bottom: 24px;
 
 	border: 1px dashed red;
 	}
@@ -361,7 +373,7 @@ padding-bottom: 82px;
 		width: 568px;
 	height: 395px;
 	background-color:var(--section-bg-color);
-	
+
 }
 
 .search-form {
@@ -374,7 +386,7 @@ padding-bottom: 82px;
 	position: absolute;
 	top: 55px;
 	left: 55px
-	
+
 }
 .form .form-item {
 	margin-top: 30px;
@@ -390,7 +402,7 @@ margin-top: 0;
 	}
 
 .form label {
-font-weight: 700;	
+font-weight: 700;
 text-transform: uppercase;
 line-height: 26px;
 }
@@ -398,7 +410,7 @@ line-height: 26px;
 .form input {
 	background: var(--field-peace);
 	border: none;
-	font-weight: 700;	
+	font-weight: 700;
 	text-transform: uppercase;
 	line-height: 26px;
 	/* --------------------------- margin-left: 20px; --------------------------- */
@@ -408,7 +420,7 @@ line-height: 26px;
     align-items: center;
 		justify-content: space-between;
 		position: relative;
-		
+
 	}
 	.date:nth-child(2) {
 		margin-top: 30px;
@@ -419,10 +431,10 @@ line-height: 26px;
 	.date-input {
 		background: var(--field-peace);
 		display: flex;
-		
+
 		width: 346px;
 		height: 38px;
-		
+
 	}
 
 	.date-pic {
@@ -459,7 +471,7 @@ line-height: 26px;
 	background-color: var(--btn-updwn-bg);
 }
 .persons .change:first-child {
-	
+
 }
 .change .minus {
 	margin: 18px 14px 17px 13px;
@@ -479,7 +491,7 @@ line-height: 26px;
 	/*скрыть кнопки увеличения-уменьшения значения*/
 	input[type="number"]::-webkit-inner-spin-button {
 		opacity: 0;
-		
+
 	}
 
 .form .buttom {
@@ -512,7 +524,7 @@ line-height: 26px;
 	height: 594px;
 	margin-top: -395px;
 	margin-bottom: -120px;
-	
+
 	z-index: 0;
 }
 /* --------------------------------- footer --------------------------------- */

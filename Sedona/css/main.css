@@ -44,14 +44,7 @@
 	--special-btn-search-hover: #604E43;
 	--special-btn-search-click: #503E33;
 
-	/* ----------------------------- кнопки соцсетей ---------------------------- */
-	--soc-btn-active: #81B3D2;
-	--soc-btn-move: #669EC0;
-	--soc-btn-hover: #5496BD;
-	--soc-btn-icon-act: #fff;
-	--soc-btn-icon-move: #fff;
-	--special-soc-btn-icon-click: rgba(255, 255, 255, 0.3);
-	/* -------------------------------- чекбоксы -------------------------------- */
+/*-------------------------------- чекбоксы -------------------------------- */
 	--chckb-peace: #ffffff;
 	--chckb-move: #ffffff;
 	--chckb-disable: #6A6A6A;
@@ -88,6 +81,11 @@
 	--name-hotel-peace: #000000;
 	--name-hotel-move: #81B3D2;
 	--name-hotel-click: rgba(0, 0, 0, 0.3);
+/* --------------------------------- рейтинг -------------------------------- */
+--char-rating-peace: #81B3D2;
+--btn-rate-bg-clr: #F2F2F2;
+--btn-rate-txt-clr: #666666;
+
 	/* ---------------------------- лого htmlacademy ---------------------------- */
 	--logo-ha-peace: #000000;
 	--logo-ha-move: #81B3D2;
@@ -577,16 +575,17 @@ line-height: 26px;
 	margin-right: 6px;
 }
 .social-btn {
-	background-color: #81b3d2;
-	width: 46px;
+	background-color: var(--btn-peace);
+  width: 46px;
 	height: 48px;
 }
 .social-btn:hover {
-	background-color: var(--btn-search-hover);
+	background-color: var(--btn-hover);
+
 }
 .social-btn:onCLick {
-	background-color: var(--btn-search-click);
-}
+	background-color: var(--btn-click);
+ }
 .twitter {
 	/* display: block;*/
 	padding-top: 16px;
@@ -596,6 +595,9 @@ line-height: 26px;
 	margin: auto;
 }
 .twitter:hover {
+  background: var();
+}
+.twitter:onClick {
   opacity: 0.3;
 }
 .fb {
@@ -604,6 +606,9 @@ line-height: 26px;
 	margin: auto;
 }
 .fb:hover {
+  background: var();
+}
+.fb:onClick {
   opacity: 0.3;
 }
 .yt {
@@ -612,6 +617,9 @@ line-height: 26px;
 	margin: auto;
 }
 .yt:hover {
+  background: var();
+}
+.yt:onclick {
   opacity: 0.3;
 }
 .develop-list {

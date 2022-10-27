@@ -31,28 +31,21 @@
 	--btn-updwn-peace: #A9A9A9;
 	--btn-updwn-move: #000000;
 	--btn-updwn-click: #81B3D2;
-	
+
 	/* ------------------------------ кнопка Найти, кнопка Подробнее ------------------------------ */
-	--btn-search-act: #81B3D2;
-	--btn-search-move: #669EC0;
-	--btn-search-hover: #5496BD;
-	--btn-txt-act: #fff;
-	--btn-txt-move: #fff;
-	--special-btn-txt-click: rgba(255, 255, 255, 0.3);
+	--btn-peace: #81B3D2;
+	--btn-hover: #669EC0;
+	--btn-click: #5496BD;
+	--btn-txt-peace: #fff;
+	--btn-txt-hover: #fff; /*пока не используется*/
+  --btn-txt-click: rgba(255, 255, 255, 0.3);
 	/* --------------------- кнопка Поиск гостиницы в Седоне, кнопка Забронировать --------------------- */
-	--special-btn-search-act: #766357;
-	--special-btn-search-move: #604E43;
-	--special-btn-search-hover: #503E33;
-	--special-btn-txt-search-act: #fff;
-	--special-btn-txt-search-move: #fff;
-	--special-btn-txt-search-click: rgba(255, 255, 255, 0.3);
-	/* ----------------------------- кнопки соцсетей ---------------------------- */
-	--soc-btn-active: #81B3D2;
-	--soc-btn-move: #669EC0;
-	--soc-btn-hover: #5496BD;
-	--soc-btn-icon-act: #fff;
-	--soc-btn-icon-move: #fff;
-	--special-soc-btn-icon-click: rgba(255, 255, 255, 0.3);
+	--special-btn-search-peace: #766357;
+	--special-btn-search-hover: #604E43;
+	--special-btn-search-click: #503E33;
+
+
+
 	/* -------------------------------- чекбоксы -------------------------------- */
 	--chckb-peace: #ffffff;
 	--chckb-move: #ffffff;
@@ -69,8 +62,8 @@
 	--brdr-style: solid;
 	--brdr-clr: #ffffff;
 	--btn-show-move-bg: #ffffff;
-	
-	
+
+
 	/* ---------------------------- кнопки сортировки --------------------------- */
 	--btn-sort-peace: #CACACA;
 	--btn-sort-move: #000000;
@@ -90,11 +83,16 @@
 	--name-hotel-peace: #000000;
 	--name-hotel-move: #81B3D2;
 	--name-hotel-click: rgba(0, 0, 0, 0.3);
+/* --------------------------------- рейтинг -------------------------------- */
+--char-rating-peace: #81B3D2;
+--btn-rate-bg-clr: #F2F2F2;
+--btn-rate-txt-clr: #666666;
+
 	/* ---------------------------- лого htmlacademy ---------------------------- */
 	--logo-ha-peace: #000000;
 	--logo-ha-move: #81B3D2;
 	--logo-ha-click: #BDBBBC;
-	
+
 	}
 
 	* {
@@ -106,17 +104,17 @@
 	width: 1200px;
 	height: 217px;
 	background: url("../img/catalog/filters-bg.png") center center no-repeat;
-	
+
 }
 
 .filters fieldset {
 	border: none;
-	
+
 }
 .filters fieldset:last-child {
 	display: flex;
 	flex-direction: column;
-	
+
 }
 /*стилизация текста полей фильтров*/
 .filters legend {
@@ -155,8 +153,8 @@ fieldset input[type="number"] {
 .cost-item__btn {
 	color: var(--btn-slct-peace);
 	background: none;
-	
-	border: 
+
+	border:
 		var(--brdr-line)
 		var(--brdr-style)
 		var(--brdr-clr);
@@ -171,10 +169,10 @@ fieldset input[type="number"] {
 .cost-item__btn:hover {
 	color: var(--btn-slct-move);
 	background: var(--btn-bg-clr);
-	border: 
-	var(--brdr-line)
-	var(--brdr-style)
-	var(--brdr-clr);
+	border:
+	  var(--brdr-line)
+	  var(--brdr-style)
+	  var(--brdr-clr);
 	border-radius: 2px;
 	padding: 8px 35px;
 	font-weight: 400;
@@ -223,15 +221,28 @@ fieldset input[type="number"] {
 	visibility: hidden;
 	top: 0;
 	left: 0;
-	
+
 }
 .simple-rating__label {
 	flex: 0 0 20%;
 	height: 100%;
 	cursor: pointer;
-	
+
 }
 
+.btn-rate {
+  background: var(--btn-rate-bg-clr);
+  color: var(--btn-rate-txt-clr);
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 15px;
+  padding-right: 12px;
+  border: none;
+
+}
 /*стилизация таблицы*/
 .housing-table {
 	margin: auto;
@@ -262,7 +273,7 @@ table h3 {
 	border-top: none;
 	border-left: none;
 	border-right: none;
-	border-bottom: 
+	border-bottom:
 		var(--btn-dwn-border-thickness-peace)
 		var(--btn-dwn-border-line-peace)
 		var(--btn-dwn-border-color-peace);
@@ -270,12 +281,12 @@ table h3 {
 /*наведение мыши*/
 .sort-item__btn:hover {
 	color: var(--txt-sort-move);
-	border-bottom: 
-	var(--btn-dwn-border-thickness-peace)
-	var(--btn-dwn-border-line-peace)
-	var(--btn-dwn-border-color-peace);
+	border-bottom:
+	  var(--btn-dwn-border-thickness-peace)
+	  var(--btn-dwn-border-line-peace)
+	  var(--btn-dwn-border-color-peace);
 	padding-bottom: 3px;
-	
+
 }
 /*нажатие мыши*/
 .sort-item__btn:onClick {
@@ -285,26 +296,50 @@ table h3 {
 /*фокус*/
 .sort-item__btn:focus {
 	color: var(--txt-sort-focus);
-	border: none;	
+	border: none;
 }
-/*
-/* ---------------------------- кнопки сортировки --------------------------- */
---btn-sort-peace: #CACACA;
---btn-sort-move: #000000;
---btn-sort-click: #81B3D2;
---btn-sort-focus: #81B3D2;
---txt-sort-peace: rgba(0, 0, 0, 0.3);
---txt-sort-move: #81B3D2;
---txt-sort-click: #000000;
---txt-sort-focus: #81B3D2;
---btn-dwn-border-thickness-peace: 1px;
---btn-dwn-border-line-peace: dotted;
---btn-dwn-border-color-peace: #81B3D2;
---btn-dwn-border-thickness-move: 1px;
---btn-dwn-border-line-move: dotted;
---btn-dwn-border-color-move: #81B3D2;
-/* --------------------------- наименование отеля --------------------------- */
---name-hotel-peace: #000000;
---name-hotel-move: #81B3D2;
---name-hotel-click: rgba(0, 0, 0, 0.3);
-	*/
+
+.btn-more {
+  background: var(--btn-peace);
+  color: var(--btn-txt-peace);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 17px;
+  padding-right: 16px;
+}
+
+.btn-more:hover {
+  background: var(--btn-hover);
+}
+
+.btn-more:onCLick {
+  background: var(--btn-click);
+  color: var(--btn-txt-click);
+}
+
+.btn-book {
+  background: var(--special-btn-search-peace);
+  color: var(--btn-txt-peace);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 16px;
+  padding-right: 17px;
+}
+
+.btn-book:hover {
+  background: var(--special-btn-search-hover);
+}
+
+.btn-book:onClick {
+  background: var(--special-btn-search-click);
+  color: var(--btn-txt-click);
+}
+

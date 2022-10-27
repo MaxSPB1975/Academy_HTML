@@ -33,19 +33,17 @@
 	--btn-updwn-click: #81B3D2;
 
 	/* ------------------------------ кнопка Найти, кнопка Подробнее ------------------------------ */
-	--btn-search-act: #81B3D2;
-	--btn-search-move: #669EC0;
-	--btn-search-hover: #5496BD;
-	--btn-txt-act: #fff;
-	--btn-txt-move: #fff;
-
+	--btn-peace: #81B3D2;
+	--btn-hover: #669EC0;
+	--btn-click: #5496BD;
+	--btn-txt-peace: #fff;
+	--btn-txt-hover: #fff; /*пока не используется*/
+  --btn-txt-click: rgba(255, 255, 255, 0.3);
 	/* --------------------- кнопка Поиск гостиницы в Седоне, кнопка Забронировать --------------------- */
 	--special-btn-search-peace: #766357;
 	--special-btn-search-hover: #604E43;
 	--special-btn-search-click: #503E33;
-	--special-btn-txt-search-act: #fff;
-	--special-btn-txt-search-hover: #fff;
-	--special-btn-txt-search-click: rgba(255, 255, 255, 0.3);
+
 	/* ----------------------------- кнопки соцсетей ---------------------------- */
 	--soc-btn-active: #81B3D2;
 	--soc-btn-move: #669EC0;
@@ -324,7 +322,7 @@ padding-bottom: 82px;
 }
 .search-content .btn-search-hotel {
 	text-transform: uppercase;
-	color:var(--btn-txt-act);
+	color:var(--btn-txt-peace);
 	font-weight: 700;
 	font-size: 21px;
 	line-height: 26px;
@@ -335,12 +333,12 @@ padding-bottom: 82px;
 }
 /*наведение на кнопку Поис гостиницы в Седоне*/
 .search-content .btn-search-hotel:hover  {
-	color:var(--btn-txt-act);
+
 	background-color: var(--special-btn-search-hover);
 }
 /* ----------------- нажатие кнопки Поиск гостиницы в Седоне ---------------- */
 .search-content .btn-search-hotel:onClick {
-	color:var(--special-btn-txt-search-click);
+	color:var(--btn-txt-click);
 	border: none;
   background-color: var(--special-btn-search-click);
 }
@@ -503,10 +501,10 @@ line-height: 26px;
 }
 
 .form  .btn-find {
-		background-color: var(--btn-search-act);
+		background-color: var(--btn-peace);
 	padding: 16px 182px;
 	/* ------------------------------ width: 458px; ----------------------------- */
-	color: var(--btn-txt-act);
+	color: var(--btn-txt-peace);
 	font-weight: 700;
 	font-size: 21px;
 	line-height: 26px;
@@ -515,7 +513,14 @@ line-height: 26px;
 	text-transform: uppercase;
 	margin-top: 54px;
 	margin-bottom: 55px;
+}
 
+.form  .btn-find:hover {
+  background-color: var(--btn-hover);
+}
+.form  .btn-find:onClick {
+  background-color: var(--btn-click);
+  color: var(--btn-txt-click);
 }
 /* ----------------------------------- map ---------------------------------- */
 .map {
@@ -576,7 +581,12 @@ line-height: 26px;
 	width: 46px;
 	height: 48px;
 }
-
+.social-btn:hover {
+	background-color: var(--btn-search-hover);
+}
+.social-btn:onCLick {
+	background-color: var(--btn-search-click);
+}
 .twitter {
 	/* display: block;*/
 	padding-top: 16px;
@@ -585,15 +595,24 @@ line-height: 26px;
 	padding-right: 14px;
 	margin: auto;
 }
+.twitter:hover {
+  opacity: 0.3;
+}
 .fb {
 	/*display: block;*/
 	padding: 13px 17px;
 	margin: auto;
 }
+.fb:hover {
+  opacity: 0.3;
+}
 .yt {
 	/* display: block;*/
 	padding: 16px 13px;
 	margin: auto;
+}
+.yt:hover {
+  opacity: 0.3;
 }
 .develop-list {
 	display: flex;

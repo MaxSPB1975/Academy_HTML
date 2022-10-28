@@ -78,9 +78,9 @@
 	--btn-dwn-border-line-move: dotted;
 	--btn-dwn-border-color-move: #81B3D2;
 	/* --------------------------- наименование отеля --------------------------- */
-	--name-hotel-peace: #000000;
-	--name-hotel-move: #81B3D2;
-	--name-hotel-click: rgba(0, 0, 0, 0.3);
+	--name-object-peace: #000000;
+	--name-object-hover: #81B3D2;
+	--name-object-click: rgba(0, 0, 0, 0.3);
 /* --------------------------------- рейтинг -------------------------------- */
 --char-rating-peace: #81B3D2;
 --btn-rate-bg-clr: #F2F2F2;

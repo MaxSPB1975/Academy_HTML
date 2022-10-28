@@ -78,9 +78,9 @@
 	--btn-dwn-border-line-move: dotted;
 	--btn-dwn-border-color-move: #81B3D2;
 	/* --------------------------- наименование отеля --------------------------- */
-	--name-hotel-peace: #000000;
-	--name-hotel-move: #81B3D2;
-	--name-hotel-click: rgba(0, 0, 0, 0.3);
+	--name-object-peace: #000000;
+	--name-object-hover: #81B3D2;
+	--name-object-click: rgba(0, 0, 0, 0.3);
 /* --------------------------------- рейтинг -------------------------------- */
 --char-rating-peace: #81B3D2;
 --btn-rate-bg-clr: #F2F2F2;
@@ -335,7 +335,7 @@ padding-bottom: 82px;
 	background-color: var(--special-btn-search-hover);
 }
 /* ----------------- нажатие кнопки Поиск гостиницы в Седоне ---------------- */
-.search-content .btn-search-hotel:onClick {
+.search-content .btn-search-hotel:active {
 	color:var(--btn-txt-click);
 	border: none;
   background-color: var(--special-btn-search-click);
@@ -516,7 +516,7 @@ line-height: 26px;
 .form  .btn-find:hover {
   background-color: var(--btn-hover);
 }
-.form  .btn-find:onClick {
+.form  .btn-find:active {
   background-color: var(--btn-click);
   color: var(--btn-txt-click);
 }
@@ -583,7 +583,7 @@ line-height: 26px;
 	background-color: var(--btn-hover);
 
 }
-.social-btn:onCLick {
+.social-btn:active {
 	background-color: var(--btn-click);
  }
 .twitter {
@@ -597,7 +597,7 @@ line-height: 26px;
 .twitter:hover {
   background: var();
 }
-.twitter:onClick {
+.twitter:active {
   opacity: 0.3;
 }
 .fb {
@@ -608,7 +608,7 @@ line-height: 26px;
 .fb:hover {
   background: var();
 }
-.fb:onClick {
+.fb:active {
   opacity: 0.3;
 }
 .yt {
@@ -619,7 +619,7 @@ line-height: 26px;
 .yt:hover {
   background: var();
 }
-.yt:onclick {
+.yt:active {
   opacity: 0.3;
 }
 .develop-list {

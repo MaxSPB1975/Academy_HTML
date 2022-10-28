@@ -80,9 +80,9 @@
 	--btn-dwn-border-line-move: dotted;
 	--btn-dwn-border-color-move: #81B3D2;
 	/* --------------------------- наименование отеля --------------------------- */
-	--name-hotel-peace: #000000;
-	--name-hotel-move: #81B3D2;
-	--name-hotel-click: rgba(0, 0, 0, 0.3);
+  --name-object-peace: #000000;
+	--name-object-move: #81B3D2;
+	--name-object-click: rgba(0, 0, 0, 0.3);
 /* --------------------------------- рейтинг -------------------------------- */
 --char-rating-peace: #81B3D2;
 --btn-rate-bg-clr: #F2F2F2;
@@ -181,68 +181,7 @@ fieldset input[type="number"] {
 	text-transform: uppercase;
 }
 
-	/* --------------------------------- рейтинг -------------------------------- */
-.simple-rating {
-	position: relative;
-	font-size: 24px;
-	display: inline-block;
-	color: var(--char-rating-peace);
 
-}
-.rating4::before {
-	display: block;
-	content: "★★★★";
-}
-.rating3::before {
-	display: block;
-	content: "★★★";
-}
-.rating2::before {
-	display: block;
-	content: "★★";
-}
-
-.simple-rating__items {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	display:flex;
-	flex-direction: row-reverse;
-	overflow: hidden;
-	}
-
-.simple-rating__item {
-	position: absolute;
-	width: 0%;
-	height: 0%;
-	opacity: 0;
-	visibility: hidden;
-	top: 0;
-	left: 0;
-
-}
-.simple-rating__label {
-	flex: 0 0 20%;
-	height: 100%;
-	cursor: pointer;
-
-}
-
-.btn-rate {
-  background: var(--btn-rate-bg-clr);
-  color: var(--btn-rate-txt-clr);
-  font-weight: 400;
-  line-height: 21px;
-  text-transform: uppercase;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  padding-left: 15px;
-  padding-right: 12px;
-  border: none;
-
-}
 /*стилизация таблицы*/
 .housing-table {
 	margin: auto;
@@ -286,10 +225,9 @@ table h3 {
 	  var(--btn-dwn-border-line-peace)
 	  var(--btn-dwn-border-color-peace);
 	padding-bottom: 3px;
-
 }
 /*нажатие мыши*/
-.sort-item__btn:onClick {
+.sort-item__btn:active {
 	color: var(--txt-sort-click);
 	border: none;
 }
@@ -297,6 +235,20 @@ table h3 {
 .sort-item__btn:focus {
 	color: var(--txt-sort-focus);
 	border: none;
+}
+/*наименование найденного объекта*/
+.object-name {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: var(--name-object-peace);
+ }
+.object-name:hover {
+color: var(--name-object-hover);
+}
+.object-name:active {
+color: var(--name-object-click);
 }
 
 .btn-more {
@@ -338,8 +290,70 @@ table h3 {
   background: var(--special-btn-search-hover);
 }
 
-.btn-book:onClick {
+.btn-book:active {
   background: var(--special-btn-search-click);
   color: var(--btn-txt-click);
 }
 
+
+	/* --------------------------------- рейтинг -------------------------------- */
+  .simple-rating {
+    position: relative;
+    font-size: 24px;
+    display: inline-block;
+    color: var(--char-rating-peace);
+
+  }
+  .rating4::before {
+    display: block;
+    content: "★★★★";
+  }
+  .rating3::before {
+    display: block;
+    content: "★★★";
+  }
+  .rating2::before {
+    display: block;
+    content: "★★";
+  }
+
+  .simple-rating__items {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display:flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+    }
+
+  .simple-rating__item {
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+
+  }
+  .simple-rating__label {
+    flex: 0 0 20%;
+    height: 100%;
+    cursor: pointer;
+
+  }
+
+  .full-rate {
+    background: var(--btn-rate-bg-clr);
+    color: var(--btn-rate-txt-clr);
+    font-weight: 400;
+    line-height: 21px;
+    text-transform: uppercase;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 15px;
+    padding-right: 12px;
+    border: none;
+  }

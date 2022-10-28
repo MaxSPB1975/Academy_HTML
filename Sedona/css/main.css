@@ -404,7 +404,7 @@ line-height: 26px;
 }
 
 .form input {
-	background: var(--field-peace);
+	background: none;
 	border: none;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -452,10 +452,9 @@ line-height: 26px;
 	.form	input[type="date"] {
 		/* ---------------------------- padding-top: 6px; --------------------------- */
 		/* -------------------------- padding-bottom: 6px; -------------------------- */
-		border: none;
 		margin-left: 13px;
-
 	}
+
 /*скрыть элемент календаря*/
 	input[type="date"]::-webkit-calendar-picker-indicator {
     opacity: 0;
@@ -494,6 +493,29 @@ line-height: 26px;
 	border: none;
 	margin: 0;
 	}
+/*кнопки - и +*/
+  .minus {
+    background: url("../img/main/minus.svg") center center no-repeat;
+    width: 12px;
+    height: 3px;
+  }
+  .minus:hover {
+    background: url("../img/main/minus_hover.svg") center center no-repeat;
+  }
+  .minus:active {
+    background: url("../img/main/minus_click.svg") center center no-repeat;
+  }
+  .plus {
+    background: url("../img/main/plus.svg") center center no-repeat;
+    width: 11px;
+    height: 11px;
+  }
+  .plus:hover {
+    background: url("../img/main/plus_hover.svg") center center no-repeat;
+  }
+  .plus:active {
+    background: url("../img/main/plus_click.svg") center center no-repeat;
+  }
 
 	/*скрыть кнопки увеличения-уменьшения значения*/
 	input[type="number"]::-webkit-inner-spin-button {

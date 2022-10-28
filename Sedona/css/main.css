@@ -633,10 +633,18 @@ line-height: 26px;
 	line-height: 26px;
 	text-transform: uppercase;
 }
-.dev-item__content {
-	vertical-align: middle;
+.dev-item_content {
+  background: url("https://maxspb1975.github.io/Academy_HTML/Sedona/img/ha_logo/ha_peace.svg")
+      center center no-repeat;
+  width: 115px;
+  height: 33px;
 }
-.ha-logo {
-	display: block;
-	margin-left: 15px;
+
+.dev-item_content:hover {
+  background: url("https://maxspb1975.github.io/Academy_HTML/Sedona/img/ha_logo/ha_hover.svg")
+      center center no-repeat;
+}
+.dev-item_content:active {
+  background: url("https://maxspb1975.github.io/Academy_HTML/Sedona/img/ha_logo/ha_click.svg")
+      center center no-repeat;
 }

@@ -9,9 +9,9 @@
 	--filter-txt-color: #fff;
 	/* ----------------------------- меню навигации ----------------------------- */
 	--nav-peace: #000000;
-	--nav-move: #81B3D2;
+	--nav-hover: #81B3D2;
 	--nav-click: rgba(0, 0, 0, 0.3);
-	--nav-focus: #766357;
+	--nav-visited: #766357;
 	/* ---------------------------- поля формы поиска --------------------------- */
 	--field-peace: #F2F2F2;
 	--field-peace-border: #F2F2F2;
@@ -174,16 +174,16 @@ a {
 
 
 .nav-button {
-color: var(--txt-color);
+color: var(--nav-peace);
 }
 .nav-button:hover {
-	color: var(--nav-move);
+	color: var(--nav-hover);
 }
 .nav-button:active {
 	color: var(--nav-click);
 }
 .nav-button:visited {
-	color: var(--nav-focus);
+	color: var(--nav-visited);
 }
 
 
@@ -404,7 +404,7 @@ line-height: 26px;
 }
 
 .form input {
-	background: var(--field-peace);
+	background: none;
 	border: none;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -426,25 +426,35 @@ line-height: 26px;
 }
 	.date-input {
 		background: var(--field-peace);
-		display: flex;
-
+ 		display: flex;
 		width: 346px;
 		height: 38px;
 
 	}
-
+/*кнопка календарь*/
 	.date-pic {
-		position: absolute;
-		top: 7px;
+    border: none;
+    background: url("../img/main/calendar.svg") center center no-repeat;
+    width: 21px;
+    height: 22px;
+    position: absolute;
+    top: 7px;
 		right: 9px;
-	}
+ 	}
+  .date-pic:hover {
+    background: url("../img/main/calendar_hover.svg") center center no-repeat;
+  }
+  .date-pic:active {
+    background: url("../img/main/calendar_click.svg") center center no-repeat;
+  }
+
 
 	.form	input[type="date"] {
 		/* ---------------------------- padding-top: 6px; --------------------------- */
 		/* -------------------------- padding-bottom: 6px; -------------------------- */
-		border: none;
 		margin-left: 13px;
 	}
+
 /*скрыть элемент календаря*/
 	input[type="date"]::-webkit-calendar-picker-indicator {
     opacity: 0;
@@ -483,6 +493,29 @@ line-height: 26px;
 	border: none;
 	margin: 0;
 	}
+/*кнопки - и +*/
+  .minus {
+    background: url("../img/main/minus.svg") center center no-repeat;
+    width: 12px;
+    height: 3px;
+  }
+  .minus:hover {
+    background: url("../img/main/minus_hover.svg") center center no-repeat;
+  }
+  .minus:active {
+    background: url("../img/main/minus_click.svg") center center no-repeat;
+  }
+  .plus {
+    background: url("../img/main/plus.svg") center center no-repeat;
+    width: 11px;
+    height: 11px;
+  }
+  .plus:hover {
+    background: url("../img/main/plus_hover.svg") center center no-repeat;
+  }
+  .plus:active {
+    background: url("../img/main/plus_click.svg") center center no-repeat;
+  }
 
 	/*скрыть кнопки увеличения-уменьшения значения*/
 	input[type="number"]::-webkit-inner-spin-button {

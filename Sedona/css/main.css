@@ -628,15 +628,26 @@ line-height: 26px;
 .develop-item {
 	display: inline-block;
 }
+.develop-list .develop-item:nth-child(2) {
+  margin-left: 15px;
+}
 .dev-item__txt {
 	font-size: 14px;
 	line-height: 26px;
 	text-transform: uppercase;
 }
 .dev-item__content {
-	vertical-align: middle;
+  background: url("../img/ha_logo/ha_peace.svg")
+      center center no-repeat;
+  width: 115px;
+  height: 33px;
 }
-.ha-logo {
-	display: block;
-	margin-left: 15px;
+
+.dev-item__content:hover {
+  background: url("../img/ha_logo/ha_hover.svg")
+      center center no-repeat;
+}
+.dev-item__content:active {
+  background: url("../img/ha_logo/ha_click.svg")
+      center center no-repeat;
 }

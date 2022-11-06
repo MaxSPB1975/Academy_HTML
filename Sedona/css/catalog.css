@@ -153,7 +153,7 @@ fieldset li {
 	margin-left: -30px;
 	width: var(--chkb-size);
 	height: var(--chkb-size);
-  background-image: url("/img/catalog/off.svg");
+  background-image: url("../img/catalog/off.svg");
   }
 
 .filter-input {
@@ -166,21 +166,21 @@ clip: rect(0 0 0 0);
   /*Checked*/
 .filter-input:checked + .filter__box {
   width: 26px;
-	background-image: url("/img/catalog/on.svg");
+	background-image: url("../img/catalog/on.svg");
 }
 /*Focused*/
 .filter-input:focus + .filter__box {
-	background-image: url("/img/catalog/off.svg");
+	background-image: url("../img/catalog/off.svg");
 }
 .filter-input:checked:focus + .filter__box {
-	background-image: url("/img/catalog/on.svg");
+	background-image: url("../img/catalog/on.svg");
 }
 /*Disabled*/
 .filter-input:disabled + .filter__box {
-	background-image: url("/img/catalog/off-disabled.svg");
+	background-image: url("../img/catalog/off-disabled.svg");
 }
 .filter-input:checked:disabled + .filter__box {
-	background-image: url("/img/catalog/on-disabled.svg");
+	background-image: url("../img/catalog/on-disabled.svg");
 }
 
 
@@ -200,7 +200,7 @@ position: relative;
 	height: 36px;
 	/*border:2px solid #fff;
 	border-radius: 2px;*/
-  background-image: url("/img/catalog/price.svg");
+  background-image: url("../img/catalog/price.svg");
   box-sizing: border-box;
 }
 .price-input {
@@ -230,7 +230,7 @@ position: relative;
 }
 .box-border {
   position: absolute;
-  background-image: url("/img/catalog/price-brd.svg");
+  background-image: url("../img/catalog/price-brd.svg");
   width: 2px;
   height: 22px;
   margin-left: 112px;

@@ -58,9 +58,9 @@
 	--btn-slct-move: #000000;
 	--btn-bg-clr:  #ffffff;
 	--chkb-size: 23px;
-	--brdr-line: 2px;
-	--brdr-style: solid;
-	--brdr-clr: #ffffff;
+	--chkb-brdr-line: 2px;
+	--chkb-brdr-style: solid;
+	--chkb-brdr-clr: #ffffff;
 	--btn-show-move-bg: #ffffff;
 
 
@@ -109,7 +109,6 @@
 
 .filters fieldset {
 	border: none;
-
 }
 .filters fieldset:last-child {
 	display: flex;
@@ -137,16 +136,105 @@ fieldset li {
 	color: var(--filter-txt-color);
 	text-transform: uppercase;
 	line-height: 21px;
+  text-align: left;
 }
 /*стилизайция  чекбоксов*/
-fieldset input[type="checkbox"] {
-width: var(--chkb-size);
-height: var(--chkb-size);
-border: var(--chkb-brdr-line) var(--chkb-brdr-style) grey/*var(--chkb-brdr-clr)*/;
+
+.filter {
+  padding-left: 30px; /*отступ слева от картинки чекбокса*/
+  text-align: left;
 }
+.option {
+  display: block;
+  margin-bottom: 10px;
+}
+.filter__box {
+  position: absolute;
+	margin-left: -30px;
+	width: var(--chkb-size);
+	height: var(--chkb-size);
+  background-image: url("/img/catalog/off.svg");
+  }
+
+.filter-input {
+position: absolute;
+width: 1px;
+height: 1px;
+overflow: hidden;
+clip: rect(0 0 0 0);
+  }
+  /*Checked*/
+.filter-input:checked + .filter__box {
+  width: 26px;
+	background-image: url("/img/catalog/on.svg");
+}
+/*Focused*/
+.filter-input:focus + .filter__box {
+	background-image: url("/img/catalog/off.svg");
+}
+.filter-input:checked:focus + .filter__box {
+	background-image: url("/img/catalog/on.svg");
+}
+/*Disabled*/
+.filter-input:disabled + .filter__box {
+	background-image: url("/img/catalog/off-disabled.svg");
+}
+.filter-input:checked:disabled + .filter__box {
+	background-image: url("/img/catalog/on-disabled.svg");
+}
+
+
+
+
+
+
+
+
+
 /**стилизация полей цен*/
-fieldset input[type="number"] {
-	border: var(--chkb-brdr-line) var(--chkb-brdr-style) grey/*var(--chkb-brdr-clr)*/;
+.price-box {
+display: flex;
+position: relative;
+	margin-left: 2px;
+	width: 224px;
+	height: 36px;
+	/*border:2px solid #fff;
+	border-radius: 2px;*/
+  background-image: url("/img/catalog/price.svg");
+  box-sizing: border-box;
+}
+.price-input {
+  font-size: inherit;
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 21px;
+}
+.price-input::placeholder {
+  color: #fff;
+
+}
+.price-input:first-child {
+  width: 58px;
+  height: 21px;
+  margin: 6.5px 26px 8.5px 28px;
+}
+.price-input:last-child {
+  width: 84px;
+  height: 21px;
+  margin: 6.5px 15px 8.5px 11px;
+}
+.price-input::-webkit-inner-spin-button {
+  display: none;
+}
+.box-border {
+  position: absolute;
+  background-image: url("/img/catalog/price-brd.svg");
+  width: 2px;
+  height: 22px;
+  margin-left: 112px;
+  margin-top: 7px;
 }
 
 /*кнопка Показать фильтра цен*/

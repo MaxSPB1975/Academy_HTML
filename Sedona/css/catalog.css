@@ -239,7 +239,6 @@ position: relative;
 /*Стилизация ползунков*/
 .range {
 	width: 100%;
-	border-box: box-sizing;
 	display: flex;
 	flex-direction: column;
 	position: relative;

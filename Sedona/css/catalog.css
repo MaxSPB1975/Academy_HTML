@@ -58,9 +58,9 @@
 	--btn-slct-move: #000000;
 	--btn-bg-clr:  #ffffff;
 	--chkb-size: 23px;
-	--brdr-line: 2px;
-	--brdr-style: solid;
-	--brdr-clr: #ffffff;
+	--chkb-brdr-line: 2px;
+	--chkb-brdr-style: solid;
+	--chkb-brdr-clr: #ffffff;
 	--btn-show-move-bg: #ffffff;
 
 
@@ -109,12 +109,12 @@
 
 .filters fieldset {
 	border: none;
-
+  text-align: left;
 }
 .filters fieldset:last-child {
 	display: flex;
 	flex-direction: column;
-
+  align-items: center;
 }
 /*стилизация текста полей фильтров*/
 .filters legend {
@@ -129,41 +129,189 @@ form {
 	justify-content: space-around;
 	padding-top: 26.5px;
 }
-fieldset {
+
+/*стилизайция  чекбоксов*/
+
+.filter {
+  padding-left: 37px; /*отступ слева от картинки чекбокса*/
+	font-size: inherit;
+	font-weight: 400;
+	line-height: 21px;
 	text-align: left;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.option {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+
+.filter__box {
+  position: absolute;
+	margin-left: -37px;
+  width: var(--chkb-size);
+	height: var(--chkb-size);
+  background-image: url("../img/catalog/off.svg");
+  }
+
+.filter-input {
+position: absolute;
+width: 1px;
+height: 1px;
+overflow: hidden;
+clip: rect(0 0 0 0);
+ }
+  /*Checked*/
+.filter-input:checked + .filter__box {
+  width: 26px;
+	background-image: url("../img/catalog/on.svg");
+}
+/*Focused*/
+.filter-input:focus + .filter__box {
+	background-image: url("../img/catalog/off.svg");
+}
+.filter-input:checked:focus + .filter__box {
+	background-image: url("../img/catalog/on.svg");
+}
+/*Disabled*/
+.filter-input:disabled + .filter__box {
+	background-image: url("../img/catalog/off-disabled.svg");
+}
+.filter-input:checked:disabled + .filter__box {
+	background-image: url("../img/catalog/on-disabled.svg");
+}
+
+
+/*стилизация полей цен*/
+.price-box {
+display: flex;
+position: relative;
+	margin-left: 2px;
+  margin-top: 10.5px;
+	width: 224px;
+	height: 36px;
+	/*border:2px solid #fff;
+	border-radius: 2px;*/
+  background-image: url("../img/catalog/price.svg");
+  box-sizing: border-box;
+}
+.price-input {
+  font-size: inherit;
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 21px;
+  color: #fff;
+  border: none;
+	outline: none;
+  cursor: pointer;
 
 }
-fieldset li {
-	color: var(--filter-txt-color);
-	text-transform: uppercase;
-	line-height: 21px;
+.price-input::placeholder {
+  color: #fff;
+
 }
-/*стилизайция  чекбоксов*/
-fieldset input[type="checkbox"] {
-width: var(--chkb-size);
-height: var(--chkb-size);
-border: var(--chkb-brdr-line) var(--chkb-brdr-style) grey/*var(--chkb-brdr-clr)*/;
+.price-input:first-child {
+  width: 58px;
+  height: 21px;
+  margin: 6.5px 26px 8.5px 28px;
 }
-/**стилизация полей цен*/
-fieldset input[type="number"] {
-	border: var(--chkb-brdr-line) var(--chkb-brdr-style) grey/*var(--chkb-brdr-clr)*/;
+.price-input:last-child {
+  width: 84px;
+  height: 21px;
+  margin: 6.5px 15px 8.5px 11px;
 }
+.price-input::-webkit-inner-spin-button {
+  display: none;
+}
+.box-border {
+  position: absolute;
+  background-image: url("../img/catalog/price-brd.svg");
+  width: 2px;
+  height: 22px;
+  margin-left: 112px;
+  margin-top: 7px;
+}
+
+/*Стилизация ползунков*/
+.range {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+
+}
+
+.range-min, .range-max {
+display: absolute;
+width: 1px;
+height: 1px;
+overflow: hidden;
+clip: rect(0 0 0 0);
+}
+
+.range-bar {
+	border: 1px solid #fff;
+	margin-left: 9.5px;
+	margin-top: 20px;
+	width: 80%;
+
+
+	}
+.range-bar-bg {
+	position: absolute;
+	border: 1px solid #fff;
+	opacity: 50%;
+	margin-left: 9.5px;
+	margin-top: 20px;
+	width: calc(100% - 9.5px);
+		}
+
+.toggle {
+	display: block;
+	position: absolute;
+	margin-top: -10px;
+    border-radius: 50%;
+    background:
+url("https://raw.githubusercontent.com/MaxSPB1975/Academy_HTML/39bc6bc767be2c3b153682843d983077145c898e/Sedona/img/catalog/Oval.svg") center center no-repeat;
+	background-color: #fff;
+	height: 19.09px;
+	width: 19.09px;
+    box-shadow: 0px 2px rgba(171, 171, 171, 0.3);
+	}
+.toggle:hover {
+	height: 23px;
+	width: 23px;
+	margin-top: -10px;
+}
+.min {
+ 	margin-left: -10px;
+}
+.max {
+	margin-left: 80%;
+}
+
 
 /*кнопка Показать фильтра цен*/
 .cost-item__btn {
-	color: var(--btn-slct-peace);
+	font-weight: 400;
+	font-size: inherit;
+	line-height: 21px;
+	text-transform: uppercase;
+  color: var(--btn-slct-peace);
 	background: none;
-
 	border:
 		var(--brdr-line)
 		var(--brdr-style)
 		var(--brdr-clr);
 	border-radius: 2px;
+  width: 137px;
 	padding: 8px 35px;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 21px;
-	text-transform: uppercase;
+	margin-top: 33px;
+
 }
 
 .cost-item__btn:hover {
@@ -284,6 +432,7 @@ color: var(--name-object-click);
   padding-bottom: 3px;
   padding-left: 16px;
   padding-right: 17px;
+
 }
 
 .btn-book:hover {

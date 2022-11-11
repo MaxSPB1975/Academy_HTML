@@ -109,11 +109,12 @@
 
 .filters fieldset {
 	border: none;
+  text-align: left;
 }
 .filters fieldset:last-child {
 	display: flex;
 	flex-direction: column;
-
+  align-items: center;
 }
 /*стилизация текста полей фильтров*/
 .filters legend {
@@ -128,30 +129,29 @@ form {
 	justify-content: space-around;
 	padding-top: 26.5px;
 }
-fieldset {
-	text-align: left;
 
-}
-fieldset li {
-	color: var(--filter-txt-color);
-	text-transform: uppercase;
-	line-height: 21px;
-  text-align: left;
-}
 /*стилизайция  чекбоксов*/
 
 .filter {
-  padding-left: 30px; /*отступ слева от картинки чекбокса*/
-  text-align: left;
+  padding-left: 37px; /*отступ слева от картинки чекбокса*/
+	font-size: inherit;
+	font-weight: 400;
+	line-height: 21px;
+	text-align: left;
+  text-transform: uppercase;
+  color: #fff;
 }
+
 .option {
   display: block;
   margin-bottom: 10px;
+  margin-top: 25px;
 }
+
 .filter__box {
   position: absolute;
-	margin-left: -30px;
-	width: var(--chkb-size);
+	margin-left: -37px;
+  width: var(--chkb-size);
 	height: var(--chkb-size);
   background-image: url("../img/catalog/off.svg");
   }
@@ -162,7 +162,7 @@ width: 1px;
 height: 1px;
 overflow: hidden;
 clip: rect(0 0 0 0);
-  }
+ }
   /*Checked*/
 .filter-input:checked + .filter__box {
   width: 26px;
@@ -184,18 +184,12 @@ clip: rect(0 0 0 0);
 }
 
 
-
-
-
-
-
-
-
-/**стилизация полей цен*/
+/*стилизация полей цен*/
 .price-box {
 display: flex;
 position: relative;
 	margin-left: 2px;
+  margin-top: 10.5px;
 	width: 224px;
 	height: 36px;
 	/*border:2px solid #fff;
@@ -210,6 +204,11 @@ position: relative;
   text-transform: uppercase;
   text-align: center;
   line-height: 21px;
+  color: #fff;
+  border: none;
+	outline: none;
+  cursor: pointer;
+
 }
 .price-input::placeholder {
   color: #fff;
@@ -237,21 +236,83 @@ position: relative;
   margin-top: 7px;
 }
 
+/*Стилизация ползунков*/
+.range {
+	width: 100%;
+	border-box: box-sizing;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+
+}
+
+.range-min, .range-max {
+display: absolute;
+width: 1px;
+height: 1px;
+overflow: hidden;
+clip: rect(0 0 0 0);
+}
+
+.range-bar {
+	border: 1px solid #fff;
+	margin-left: 9.5px;
+	margin-top: 20px;
+	width: 80%;
+
+
+	}
+.range-bar-bg {
+	position: absolute;
+	border: 1px solid #fff;
+	opacity: 50%;
+	margin-left: 9.5px;
+	margin-top: 20px;
+	width: calc(100% - 9.5px);
+		}
+
+.toggle {
+	display: block;
+	position: absolute;
+	margin-top: -10px;
+    border-radius: 50%;
+    background:
+url("https://raw.githubusercontent.com/MaxSPB1975/Academy_HTML/39bc6bc767be2c3b153682843d983077145c898e/Sedona/img/catalog/Oval.svg") center center no-repeat;
+	background-color: #fff;
+	height: 19.09px;
+	width: 19.09px;
+    box-shadow: 0px 2px rgba(171, 171, 171, 0.3);
+	}
+.toggle:hover {
+	height: 23px;
+	width: 23px;
+	margin-top: -10px;
+}
+.min {
+ 	margin-left: -10px;
+}
+.max {
+	margin-left: 80%;
+}
+
+
 /*кнопка Показать фильтра цен*/
 .cost-item__btn {
-	color: var(--btn-slct-peace);
+	font-weight: 400;
+	font-size: inherit;
+	line-height: 21px;
+	text-transform: uppercase;
+  color: var(--btn-slct-peace);
 	background: none;
-
 	border:
 		var(--brdr-line)
 		var(--brdr-style)
 		var(--brdr-clr);
 	border-radius: 2px;
+  width: 137px;
 	padding: 8px 35px;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 21px;
-	text-transform: uppercase;
+	margin-top: 33px;
+
 }
 
 .cost-item__btn:hover {
@@ -372,6 +433,7 @@ color: var(--name-object-click);
   padding-bottom: 3px;
   padding-left: 16px;
   padding-right: 17px;
+
 }
 
 .btn-book:hover {
